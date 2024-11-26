@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
         "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
         "outputPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\obj\\",
+=======
+    "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj": {}
+  },
+  "projects": {
+    "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
+        "projectName": "CareerX",
+        "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\",
+>>>>>>> 1074846456f37d06c95b4d01fe5bf540e1832044
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,6 +83,12 @@
               "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
             },
