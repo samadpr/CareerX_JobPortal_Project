@@ -5181,19 +5181,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\aslam\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\project\\CareerX\\CareerX\\CareerX.csproj",
+      "projectUniqueName": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "projectName": "CareerX",
-      "projectPath": "D:\\project\\CareerX\\CareerX\\CareerX.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\CareerX\\CareerX\\obj\\",
+      "projectPath": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
+      "packagesPath": "C:\\Users\\aslam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aslam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5271,7 +5276,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
