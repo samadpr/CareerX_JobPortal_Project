@@ -5186,11 +5186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\project\\CareerX\\CareerX\\CareerX.csproj",
+      "projectUniqueName": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "projectName": "CareerX",
-      "projectPath": "D:\\project\\CareerX\\CareerX\\CareerX.csproj",
+      "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\CareerX\\CareerX\\obj\\",
+      "outputPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

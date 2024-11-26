@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\CareerX\\Domain\\Domain.csproj": {}
+    "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\project\\CareerX\\CareerX\\CareerX.csproj": {
+    "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\CareerX\\CareerX\\CareerX.csproj",
+        "projectUniqueName": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
         "projectName": "CareerX",
-        "projectPath": "D:\\project\\CareerX\\CareerX\\CareerX.csproj",
+        "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\CareerX\\CareerX\\obj\\",
+        "outputPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,14 +96,14 @@
         }
       }
     },
-    "D:\\project\\CareerX\\Domain\\Domain.csproj": {
+    "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\CareerX\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\project\\CareerX\\Domain\\Domain.csproj",
+        "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\CareerX\\Domain\\obj\\",
+        "outputPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,8 +121,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\project\\CareerX\\CareerX\\CareerX.csproj": {
-                "projectPath": "D:\\project\\CareerX\\CareerX\\CareerX.csproj"
+              "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj": {
+                "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj"
               }
             }
           }
