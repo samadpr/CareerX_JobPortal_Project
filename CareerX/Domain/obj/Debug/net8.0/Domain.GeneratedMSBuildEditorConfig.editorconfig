@@ -17,7 +17,11 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Domain
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\aslam\CareerX_JobPortal_Project\CareerX\Domain\
+=======
+build_property.ProjectDir = D:\Full stark developer\CareerX_Project\CareerX\Domain\
+>>>>>>> 605a4961fe92738de3fdf7dbd7497d613153e3c8
 =======
 build_property.ProjectDir = D:\project\CareerX_JobPortal_Project\CareerX\Domain\
 >>>>>>> 1074846456f37d06c95b4d01fe5bf540e1832044

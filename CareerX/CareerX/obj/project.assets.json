@@ -5213,18 +5213,30 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\aslam\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\asama\\.nuget\\packages\\": {},
+>>>>>>> 605a4961fe92738de3fdf7dbd7497d613153e3c8
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "projectName": "CareerX",
       "projectPath": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "packagesPath": "C:\\Users\\aslam\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\",
+=======
+      "projectUniqueName": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
+      "projectName": "CareerX",
+      "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
+      "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
+      "outputPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\obj\\",
+>>>>>>> 605a4961fe92738de3fdf7dbd7497d613153e3c8
 =======
       "projectUniqueName": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "projectName": "CareerX",
@@ -5237,7 +5249,11 @@
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\aslam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\asama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 605a4961fe92738de3fdf7dbd7497d613153e3c8
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5322,7 +5338,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 605a4961fe92738de3fdf7dbd7497d613153e3c8
       }
     }
   }
