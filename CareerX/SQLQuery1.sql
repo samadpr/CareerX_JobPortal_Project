@@ -7,40 +7,41 @@ use careerxDB
 --CREATE COMMAND FOR sYSTEM uSER
 
 CREATE TABLE systemUser (
-    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generates GUID values
-    UserName NVARCHAR(255) NULL,                            -- Nullable
-    FirstName NVARCHAR(255) NOT NULL,                       -- Required
-    LastName NVARCHAR(255) NULL,                            -- Nullable
-    Phone NVARCHAR(20) NOT NULL,                            -- Required
-    Email NVARCHAR(255) NOT NULL,                           -- Required
-    Role INT NULL                                           -- Nullable, use INT for enums
+    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+    UserName NVARCHAR(255) NULL,                            
+    FirstName NVARCHAR(255) NOT NULL,                       
+    LastName NVARCHAR(255) NULL,                            
+    Phone NVARCHAR(20) NOT NULL,                           
+    Email NVARCHAR(255) NOT NULL,                           
+    Role INT NULL                                           
 );
 
 
 CREATE TABLE SignUpRequests (
-    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),  -- Auto-generated GUID
-    UserName NVARCHAR(255) NULL,                               -- Nullable string
-    FirstName NVARCHAR(255) NOT NULL,                          -- Non-nullable string
-    LastName NVARCHAR(255) NULL,                               -- Nullable string
-    Phone NVARCHAR(50) NOT NULL,                               -- Non-nullable string for phone
-    Email NVARCHAR(255) NOT NULL,                              -- Non-nullable email
+    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), 
+    UserName NVARCHAR(255) NULL,                               
+    FirstName NVARCHAR(255) NOT NULL,                         
+    LastName NVARCHAR(255) NULL,                               
+    Phone NVARCHAR(50) NOT NULL,                              
+    Email NVARCHAR(255) NOT NULL,                              
     Status INT NOT NULL
 );
 
 --Authuser Table
 CREATE TABLE AuthUser (
-    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generates GUID values
-    [Password] NVARCHAR(255) NULL,                            -- Nullable
+    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+    [Password] NVARCHAR(255) NULL,                            
                              
-    [Status] INT NULL                                           -- Nullable, use INT for enums
+    [Status] INT NULL                                           
 );
 
 --Skill
 CREATE TABLE Skill (
-    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
-    Name NVARCHAR(255) NOT NULL,                              -- Required
-    Description NVARCHAR(MAX) NOT NULL                        -- Required
+    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+    Name NVARCHAR(255) NOT NULL,                              
+    Description NVARCHAR(MAX) NOT NULL                        
 );
+
 
 --Location
 
@@ -49,6 +50,7 @@ CREATE TABLE Location (
     Name NVARCHAR(255) NOT NULL,                              -- Required
     Description NVARCHAR(MAX) NOT NULL                        -- Required
 );
+
 
 
 CREATE TABLE Qualification (
@@ -86,7 +88,38 @@ CREATE TABLE CompanyUser (
     CONSTRAINT FK_JobProviderCompany_Location FOREIGN KEY (Location) REFERENCES Location(Id)
 );
 
+select * from CompanyAdmin
+CREATE TABLE HIRINGMANAGER(
+	ID UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+	Email NVARCHAR(255) NOT NULL,     
+ CompanyId UNIQUEIDENTIFIER  NULL ,
+	 UserName NVARCHAR(255) NULL,                            
+    FirstName NVARCHAR(255) NOT NULL,                       
+    LastName NVARCHAR(255) NULL,                             
+    Phone NVARCHAR(20) NOT NULL,                             
+                             
+    Image VARBINARY(MAX) NULL,                               -- Optional Image as byte array
+    Role INT NOT NULL,                                       -- Role field (use for enums)
+    CONSTRAINT UC_Email2 UNIQUE (Email)   ,  
+	 CONSTRAINT FK_JobProviderCompany_CompId FOREIGN KEY (CompanyId) REFERENCES CompanyAdmin(Id)
 
+);
+
+
+CREATE TABLE Interviews (
+    Id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    JobId UNIQUEIDENTIFIER NULL,
+    interviewee UNIQUEIDENTIFIER NULL,
+    ApplicationId UNIQUEIDENTIFIER NULL,
+    Date DATETIME NULL,
+    SheduledBy UNIQUEIDENTIFIER NULL,
+    CompanyId UNIQUEIDENTIFIER NOT NULL,
+    FOREIGN KEY (JobId) REFERENCES JobPosts(Id),
+    FOREIGN KEY (interviewee) REFERENCES JobSeekers(Id),
+    FOREIGN KEY (ApplicationId) REFERENCES JobApplications(Id),
+    FOREIGN KEY (SheduledBy) REFERENCES CompanyUsers(Id),
+    FOREIGN KEY (CompanyId) REFERENCES JobProviderCompanies(Id)
+);
 
 CREATE TABLE JobPost (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
@@ -116,6 +149,7 @@ ALTER TABLE JobPost DROP CONSTRAINT FK_JobPost_Company;
 ALTER TABLE JobPost
 ADD CONSTRAINT FK_JobPost_Company FOREIGN KEY (CompanyId) REFERENCES CompanyAdmin(Id);
 
+select * from JobPost
 
 select * from CompanyAdmin
 CREATE TABLE JobResponsibility (--ADDED WHEN POST A JOB
@@ -134,7 +168,7 @@ CREATE TABLE AppliedJobs (
     CONSTRAINT FK_AppliedJobs_JobPost FOREIGN KEY (JobPostId) REFERENCES JobPost(Id),
     CONSTRAINT FK_AppliedJobs_User FOREIGN KEY (UserId) REFERENCES SystemUser(Id)
 );
-
+drop table AppliedJobs
 
 CREATE TABLE SavedJobs (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),  -- Auto-generated GUID
@@ -163,21 +197,13 @@ ADD CONSTRAINT FK_SavedJobs_JobSeeker FOREIGN KEY (SavedBy) REFERENCES JobSeeker
 
 select  * from SavedJobs
 
-
-
+ 
 SELECT TABLE_SCHEMA, TABLE_NAME
 FROM INFORMATION_SCHEMA.TABLES
 WHERE TABLE_TYPE = 'BASE TABLE'
 ORDER BY TABLE_SCHEMA, TABLE_NAME;
 
-CREATE TABLE HIRINGMANAGER(
-	ID UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
-	Email	varchar(max) not null,
-	[Name] varchar(max) ,
-	
-
-
-)
+ 
 drop table JobSeekerProfile
 
 CREATE TABLE JobSeeker (
@@ -206,7 +232,7 @@ CREATE TABLE JobSeekerProfileSkill (
     CONSTRAINT FK_JobSeekerProfileSkill_Skill FOREIGN KEY (SkillId) REFERENCES Skill(Id)
 );
 
-
+select * from JobSeekerProfileSkill
 CREATE TABLE Resume (--- if we need  to upadate resume then better way to store resume in seperete table
 
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
@@ -228,6 +254,8 @@ CREATE TABLE WorkExperiences (
     ServiceEnd DATETIME NOT NULL,                               -- Service end date (non-nullable)
     CONSTRAINT FK_WorkExperience_JobSeekerProfile FOREIGN KEY (JobSeekerProfileId) REFERENCES JobSeekerProfile(Id)  -- Foreign key reference to JobSeekerProfile
 );
+
+
 CREATE TABLE JobApplication (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
     JobPost_id UNIQUEIDENTIFIER NOT NULL,
@@ -235,8 +263,8 @@ CREATE TABLE JobApplication (
     ResumeId UNIQUEIDENTIFIER NOT NULL,                      -- Foreign Key to Resume
     CoverLetter NVARCHAR(MAX) NULL,
     Datesubmitted DATETIME NOT NULL DEFAULT GETDATE(),
-    Status INT NOT NULL DEFAULT 0,
     CONSTRAINT FK_JobApplication_JobPost FOREIGN KEY (JobPost_id) REFERENCES JobPost(Id),
     CONSTRAINT FK_JobApplication_Applicant FOREIGN KEY (Applicant) REFERENCES SystemUser(Id),
     CONSTRAINT FK_JobApplication_Resume FOREIGN KEY (ResumeId) REFERENCES Resume(Id)
+    Status INT NOT NULL DEFAULT 0,
 );
