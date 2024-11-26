@@ -5219,19 +5219,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
       "projectName": "CareerX",
       "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
       "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
       "outputPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\obj\\",
-=======
-      "projectUniqueName": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
-      "projectName": "CareerX",
-      "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\",
->>>>>>> 1074846456f37d06c95b4d01fe5bf540e1832044
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5325,5 +5317,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
