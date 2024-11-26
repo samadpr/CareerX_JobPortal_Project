@@ -5204,19 +5204,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\asama\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\project\\CareerX\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\project\\CareerX\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\CareerX\\Domain\\obj\\",
+      "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
+      "outputPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5231,8 +5236,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\project\\CareerX\\CareerX\\CareerX.csproj": {
-              "projectPath": "D:\\project\\CareerX\\CareerX\\CareerX.csproj"
+            "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj": {
+              "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj"
             }
           }
         }
@@ -5291,7 +5296,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
