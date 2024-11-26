@@ -1,6 +1,19 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Domain.csproj": {}
+  },
+  "projects": {
+    "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
+        "projectName": "CareerX",
+        "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
+        "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
+        "outputPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\obj\\",
+=======
     "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {}
   },
   "projects": {
@@ -12,9 +25,14 @@
         "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
         "outputPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\",
+>>>>>>> 1074846456f37d06c95b4d01fe5bf540e1832044
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,10 +116,20 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
+    "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
+        "outputPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\obj\\",
+=======
     "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -110,9 +138,14 @@
         "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
         "outputPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\obj\\",
+>>>>>>> 1074846456f37d06c95b4d01fe5bf540e1832044
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -127,8 +160,13 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
+              "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj": {
+                "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj"
+=======
               "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj": {
                 "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj"
+>>>>>>> 1074846456f37d06c95b4d01fe5bf540e1832044
               }
             }
           }
@@ -193,7 +231,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
