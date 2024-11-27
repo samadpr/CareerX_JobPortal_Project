@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CareerX")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8586d1245539dda04aef693749f37ac5f6a2357e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbfb4ae04fce5ea96831cd605789d29617c55835")]
 [assembly: System.Reflection.AssemblyProductAttribute("CareerX")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CareerX")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

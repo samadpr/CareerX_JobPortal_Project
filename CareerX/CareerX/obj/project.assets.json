@@ -1724,6 +1724,22 @@
             "rid": "win"
           }
         }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -5199,12 +5215,18 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
@@ -5213,32 +5235,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asama\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
-      "projectName": "CareerX",
-      "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
-      "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
-      "outputPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\obj\\",
-=======
       "projectUniqueName": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "projectName": "CareerX",
       "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
       "outputPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\",
->>>>>>> 1074846456f37d06c95b4d01fe5bf540e1832044
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\asama\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5252,7 +5261,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5322,7 +5335,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
