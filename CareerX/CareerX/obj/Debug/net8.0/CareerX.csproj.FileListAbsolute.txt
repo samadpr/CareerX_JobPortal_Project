@@ -169,3 +169,5 @@ D:\project\CareerX_JobPortal_Project\CareerX\CareerX\obj\Debug\net8.0\refint\Car
 D:\project\CareerX_JobPortal_Project\CareerX\CareerX\obj\Debug\net8.0\CareerX.pdb
 D:\project\CareerX_JobPortal_Project\CareerX\CareerX\obj\Debug\net8.0\CareerX.genruntimeconfig.cache
 D:\project\CareerX_JobPortal_Project\CareerX\CareerX\obj\Debug\net8.0\ref\CareerX.dll
+D:\project\CareerX_JobPortal_Project\CareerX\CareerX\bin\Debug\net8.0\Domain.dll
+D:\project\CareerX_JobPortal_Project\CareerX\CareerX\bin\Debug\net8.0\Domain.pdb

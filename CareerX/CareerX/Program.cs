@@ -1,5 +1,10 @@
+using System.Text;
+ 
+using Microsoft.EntityFrameworkCore;
+using Domain.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddApplicationServices1(builder.Configuration);
 // Add services to the container.
 
 builder.Services.AddControllers();
