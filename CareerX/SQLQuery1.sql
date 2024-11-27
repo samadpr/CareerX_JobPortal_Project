@@ -1,5 +1,5 @@
 create database careerxDB
-
+Drop database careerxDB
 
 use careerxDB
 
@@ -29,7 +29,7 @@ CREATE TABLE SignUpRequests (
 
 --Authuser Table
 CREATE TABLE AuthUser (
-    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
+   
     [Password] NVARCHAR(255) NULL,                            
                              
     [Status] INT NULL                                           
@@ -39,7 +39,7 @@ CREATE TABLE AuthUser (
 CREATE TABLE Skill (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
     Name NVARCHAR(255) NOT NULL,                              
-    Description NVARCHAR(MAX) NOT NULL                        
+    Description NVARCHAR(MAX)                    
 );
 
 
@@ -48,7 +48,7 @@ CREATE TABLE Skill (
 CREATE TABLE Location (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
     Name NVARCHAR(255) NOT NULL,                              -- Required
-    Description NVARCHAR(MAX) NOT NULL                        -- Required
+    Description NVARCHAR(MAX)                     -- Required
 );
 
 
@@ -56,25 +56,25 @@ CREATE TABLE Location (
 CREATE TABLE Qualification (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
     Name NVARCHAR(255) NOT NULL,                              -- Required
-    Description NVARCHAR(MAX) NOT NULL                        -- Required
+    Description NVARCHAR(MAX)                        -- Required
 );
 
 
 CREATE TABLE Industry (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
     Name NVARCHAR(255) NOT NULL,                              -- Required
-    Description NVARCHAR(MAX) NOT NULL                        -- Required
+    Description NVARCHAR(MAX)                    -- Required
 );
 
 
 CREATE TABLE JobCategory (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
     Name NVARCHAR(255) NOT NULL,                              -- Required
-    Description NVARCHAR(MAX) NOT NULL                        -- Required
+    Description NVARCHAR(MAX)                      -- Required
 );
 
 
-CREATE TABLE CompanyUser (
+CREATE TABLE CompanyAdmin (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
     LegalName NVARCHAR(255) NOT NULL,                        -- Required
     Summary NVARCHAR(MAX) NOT NULL,                          -- Required
@@ -88,6 +88,7 @@ CREATE TABLE CompanyUser (
     CONSTRAINT FK_JobProviderCompany_Location FOREIGN KEY (Location) REFERENCES Location(Id)
 );
 
+drop table CompanyUser
 select * from CompanyAdmin
 CREATE TABLE HIRINGMANAGER(
 	ID UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
@@ -106,105 +107,6 @@ CREATE TABLE HIRINGMANAGER(
 );
 
 
-CREATE TABLE Interviews (
-    Id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
-    JobId UNIQUEIDENTIFIER NULL,
-    interviewee UNIQUEIDENTIFIER NULL,
-    ApplicationId UNIQUEIDENTIFIER NULL,
-    Date DATETIME NULL,
-    SheduledBy UNIQUEIDENTIFIER NULL,
-    CompanyId UNIQUEIDENTIFIER NOT NULL,
-    FOREIGN KEY (JobId) REFERENCES JobPosts(Id),
-    FOREIGN KEY (interviewee) REFERENCES JobSeekers(Id),
-    FOREIGN KEY (ApplicationId) REFERENCES JobApplications(Id),
-    FOREIGN KEY (SheduledBy) REFERENCES CompanyUsers(Id),
-    FOREIGN KEY (CompanyId) REFERENCES JobProviderCompanies(Id)
-);
-
-CREATE TABLE JobPost (
-    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
-    JobTitle NVARCHAR(255) NOT NULL,                          -- Required
-    JobSummary NVARCHAR(MAX) NOT NULL,                        -- Required
-    LocationId UNIQUEIDENTIFIER NOT NULL,                     -- Foreign key for Location
-    CompanyId UNIQUEIDENTIFIER NOT NULL,                      -- Foreign key for Company
-    CategoryId UNIQUEIDENTIFIER NOT NULL,                     -- Foreign key for JobCategory
-    IndustryId UNIQUEIDENTIFIER NOT NULL,                     -- Foreign key for Industry
-    PostedBy UNIQUEIDENTIFIER NOT NULL,                       -- Foreign key for PostedBy (SystemUser)
-    PostedDate DATETIME NOT NULL DEFAULT GETDATE(),           -- Default to current date
-    QualificationId UNIQUEIDENTIFIER NOT NULL,                -- Foreign key for Qualification
-    SkillId UNIQUEIDENTIFIER NOT NULL,                        -- Foreign key for Skill
-    CONSTRAINT FK_JobPost_Location FOREIGN KEY (LocationId) REFERENCES Location(Id),
-    CONSTRAINT FK_JobPost_Company FOREIGN KEY (CompanyId) REFERENCES CompanyUser(Id),
-    CONSTRAINT FK_JobPost_JobCategory FOREIGN KEY (CategoryId) REFERENCES JobCategory(Id),
-    CONSTRAINT FK_JobPost_Industry FOREIGN KEY (IndustryId) REFERENCES Industry(Id),
-    CONSTRAINT FK_JobPost_PostedBy FOREIGN KEY (PostedBy) REFERENCES SystemUser(Id),
-    CONSTRAINT FK_JobPost_Qualification FOREIGN KEY (QualificationId) REFERENCES Qualification(Id),
-    CONSTRAINT FK_JobPost_Skill FOREIGN KEY (SkillId) REFERENCES Skill(Id)
-);
-
-EXEC sp_rename 'CompanyUser', 'CompanyAdmin';
-ALTER TABLE JobPost DROP CONSTRAINT FK_JobPost_Company;
-
--- Add a new foreign key constraint pointing to CompanyAdmin
-ALTER TABLE JobPost
-ADD CONSTRAINT FK_JobPost_Company FOREIGN KEY (CompanyId) REFERENCES CompanyAdmin(Id);
-
-select * from JobPost
-
-select * from CompanyAdmin
-CREATE TABLE JobResponsibility (--ADDED WHEN POST A JOB
-    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
-    Name NVARCHAR(255) NULL,                                 -- Nullable Name
-    Description NVARCHAR(MAX) NULL                           -- Nullable Description
-);
- 
-
-CREATE TABLE AppliedJobs (
-    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),  -- Auto-generated GUID
-    JobPostId UNIQUEIDENTIFIER NOT NULL,                      -- Foreign key for JobPost
-    UserId UNIQUEIDENTIFIER NOT NULL,                         -- Foreign key for SystemUser (Job Seeker)
-    AppliedDate DATETIME NOT NULL DEFAULT GETDATE(),          -- Date when the job was applied for
-    Status NVARCHAR(50) NOT NULL DEFAULT 'Pending',           -- Application status (e.g., Pending, Accepted, Rejected)
-    CONSTRAINT FK_AppliedJobs_JobPost FOREIGN KEY (JobPostId) REFERENCES JobPost(Id),
-    CONSTRAINT FK_AppliedJobs_User FOREIGN KEY (UserId) REFERENCES SystemUser(Id)
-);
-drop table AppliedJobs
-
-CREATE TABLE SavedJobs (
-    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),  -- Auto-generated GUID
-    JobPostId UNIQUEIDENTIFIER NOT NULL,                      -- Foreign key for JobPost
-    UserId UNIQUEIDENTIFIER NOT NULL,                         -- Foreign key for SystemUser (Job Seeker)
-    SavedDate DATETIME NOT NULL DEFAULT GETDATE(),            -- Date when the job was saved
-    CONSTRAINT FK_SavedJobs_JobPost FOREIGN KEY (JobPostId) REFERENCES JobPost(Id),
-    CONSTRAINT FK_SavedJobs_User FOREIGN KEY (UserId) REFERENCES SystemUser(Id)
-);
-
-
-EXEC sp_rename 'SavedJobs.JobPostId', 'Job', 'COLUMN';
-EXEC sp_rename 'SavedJobs.UserId', 'SavedBy', 'COLUMN';
-EXEC sp_rename 'SavedJobs.SavedDate', 'DateSaved', 'COLUMN';
-
--- Step 2: Drop the old foreign key constraints
-ALTER TABLE SavedJobs DROP CONSTRAINT FK_SavedJobs_JobPost;
-ALTER TABLE SavedJobs DROP CONSTRAINT FK_SavedJobs_User;
-
--- Step 3: Add new foreign key constraints with the updated column names
-ALTER TABLE SavedJobs
-ADD CONSTRAINT FK_SavedJobs_Job FOREIGN KEY (Job) REFERENCES JobPost(Id);
-
-ALTER TABLE SavedJobs
-ADD CONSTRAINT FK_SavedJobs_JobSeeker FOREIGN KEY (SavedBy) REFERENCES JobSeeker(Id);
-
-select  * from SavedJobs
-
- 
-SELECT TABLE_SCHEMA, TABLE_NAME
-FROM INFORMATION_SCHEMA.TABLES
-WHERE TABLE_TYPE = 'BASE TABLE'
-ORDER BY TABLE_SCHEMA, TABLE_NAME;
-
- 
-drop table JobSeekerProfile
 
 CREATE TABLE JobSeeker (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
@@ -249,11 +151,104 @@ CREATE TABLE WorkExperiences (
     JobSeekerProfileId UNIQUEIDENTIFIER NOT NULL,              -- Foreign key for JobSeekerProfile
     JobTitle NVARCHAR(255) NOT NULL,                            -- Job title (non-nullable)
     CompanyName NVARCHAR(255) NOT NULL,                         -- Company name (non-nullable)
-    Summary NVARCHAR(MAX) NOT NULL,                             -- Summary (non-nullable)
+    Summary NVARCHAR(MAX),                             -- Summary (non-nullable)
     ServiceStart DATETIME NOT NULL,                             -- Service start date (non-nullable)
     ServiceEnd DATETIME NOT NULL,                               -- Service end date (non-nullable)
     CONSTRAINT FK_WorkExperience_JobSeekerProfile FOREIGN KEY (JobSeekerProfileId) REFERENCES JobSeekerProfile(Id)  -- Foreign key reference to JobSeekerProfile
 );
+
+CREATE TABLE JobPosts (
+    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
+    JobTitle NVARCHAR(255) NOT NULL,                          -- Required
+    JobSummary NVARCHAR(MAX) NOT NULL,                        -- Required
+    LocationId UNIQUEIDENTIFIER NOT NULL,                     -- Foreign key for Location
+    CompanyId UNIQUEIDENTIFIER NOT NULL,                      -- Foreign key for Company
+    CategoryId UNIQUEIDENTIFIER NOT NULL,                     -- Foreign key for JobCategory
+    IndustryId UNIQUEIDENTIFIER NOT NULL,                     -- Foreign key for Industry
+    PostedBy UNIQUEIDENTIFIER NOT NULL,                       -- Foreign key for PostedBy (SystemUser)
+    PostedDate DATETIME NOT NULL DEFAULT GETDATE(),           -- Default to current date
+    QualificationId UNIQUEIDENTIFIER NOT NULL,                -- Foreign key for Qualification
+    SkillId UNIQUEIDENTIFIER NOT NULL,                        -- Foreign key for Skill
+    CONSTRAINT FK_JobPost_Location FOREIGN KEY (LocationId) REFERENCES Location(Id),
+    CONSTRAINT FK_JobPost_Company FOREIGN KEY (CompanyId) REFERENCES CompanyAdmin(Id),
+    CONSTRAINT FK_JobPost_JobCategory FOREIGN KEY (CategoryId) REFERENCES JobCategory(Id),
+    CONSTRAINT FK_JobPost_Industry FOREIGN KEY (IndustryId) REFERENCES Industry(Id),
+    CONSTRAINT FK_JobPost_PostedBy FOREIGN KEY (PostedBy) REFERENCES HIRINGMANAGER(Id),
+    CONSTRAINT FK_JobPost_Qualification FOREIGN KEY (QualificationId) REFERENCES Qualification(Id),
+    CONSTRAINT FK_JobPost_Skill FOREIGN KEY (SkillId) REFERENCES Skill(Id)
+);
+
+CREATE TABLE Interviews (
+    Id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    JobId UNIQUEIDENTIFIER NULL,
+    interviewee UNIQUEIDENTIFIER NULL,
+    ApplicationId UNIQUEIDENTIFIER NULL,
+    Date DATETIME NULL,
+    SheduledBy UNIQUEIDENTIFIER NULL,
+    CompanyId UNIQUEIDENTIFIER NOT NULL,
+    FOREIGN KEY (JobId) REFERENCES JobPosts(Id),
+    FOREIGN KEY (interviewee) REFERENCES JobSeekers(Id),
+    FOREIGN KEY (ApplicationId) REFERENCES JobApplications(Id),
+    FOREIGN KEY (SheduledBy) REFERENCES CompanyUsers(Id),
+    FOREIGN KEY (CompanyId) REFERENCES JobProviderCompanies(Id)
+);
+
+
+EXEC sp_rename 'CompanyUser', 'CompanyAdmin';
+ALTER TABLE JobPost DROP CONSTRAINT FK_JobPost_Company;
+
+-- Add a new foreign key constraint pointing to CompanyAdmin
+ALTER TABLE JobPost
+ADD CONSTRAINT FK_JobPost_Company FOREIGN KEY (CompanyId) REFERENCES CompanyAdmin(Id);
+
+select * from JobPost
+
+select * from CompanyAdmin
+CREATE TABLE JobResponsibility (--ADDED WHEN POST A JOB
+    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), -- Auto-generated GUID
+    Name NVARCHAR(255) NULL,                                 -- Nullable Name
+    Description NVARCHAR(MAX) NULL                           -- Nullable Description
+);
+ 
+
+
+
+
+CREATE TABLE SavedJobs (
+    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),  -- Auto-generated GUID
+    JobPostId UNIQUEIDENTIFIER NOT NULL,                      -- Foreign key for JobPost
+    UserId UNIQUEIDENTIFIER NOT NULL,                         -- Foreign key for SystemUser (Job Seeker)
+    SavedDate DATETIME NOT NULL DEFAULT GETDATE(),            -- Date when the job was saved
+    CONSTRAINT FK_SavedJobs_JobPost FOREIGN KEY (JobPostId) REFERENCES JobPosts(Id),
+    CONSTRAINT FK_SavedJobs_User FOREIGN KEY (UserId) REFERENCES JobSeeker(Id)
+);
+
+
+EXEC sp_rename 'SavedJobs.JobPostId', 'Job', 'COLUMN';
+EXEC sp_rename 'SavedJobs.UserId', 'SavedBy', 'COLUMN';
+EXEC sp_rename 'SavedJobs.SavedDate', 'DateSaved', 'COLUMN';
+
+-- Step 2: Drop the old foreign key constraints
+ALTER TABLE SavedJobs DROP CONSTRAINT FK_SavedJobs_JobPost;
+ALTER TABLE SavedJobs DROP CONSTRAINT FK_SavedJobs_User;
+
+-- Step 3: Add new foreign key constraints with the updated column names
+ALTER TABLE SavedJobs
+ADD CONSTRAINT FK_SavedJobs_Job FOREIGN KEY (Job) REFERENCES JobPosts(Id);
+
+ALTER TABLE SavedJobs
+ADD CONSTRAINT FK_SavedJobs_JobSeeker FOREIGN KEY (SavedBy) REFERENCES JobSeeker(Id);
+
+select  * from SavedJobs
+
+ 
+SELECT TABLE_SCHEMA, TABLE_NAME
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE'
+ORDER BY TABLE_SCHEMA, TABLE_NAME;
+
+ select * from __EFMigrationsHistory
+drop table systemUser
 
 
 CREATE TABLE JobApplication (
@@ -263,8 +258,8 @@ CREATE TABLE JobApplication (
     ResumeId UNIQUEIDENTIFIER NOT NULL,                      -- Foreign Key to Resume
     CoverLetter NVARCHAR(MAX) NULL,
     Datesubmitted DATETIME NOT NULL DEFAULT GETDATE(),
-    CONSTRAINT FK_JobApplication_JobPost FOREIGN KEY (JobPost_id) REFERENCES JobPost(Id),
-    CONSTRAINT FK_JobApplication_Applicant FOREIGN KEY (Applicant) REFERENCES SystemUser(Id),
-    CONSTRAINT FK_JobApplication_Resume FOREIGN KEY (ResumeId) REFERENCES Resume(Id)
+    CONSTRAINT FK_JobApplication_JobPost FOREIGN KEY (JobPost_id) REFERENCES JobPosts(Id),
+    CONSTRAINT FK_JobApplication_Applicant FOREIGN KEY (Applicant) REFERENCES Jobseeker(Id),
+    CONSTRAINT FK_JobApplication_Resume FOREIGN KEY (ResumeId) REFERENCES Resume(Id),
     Status INT NOT NULL DEFAULT 0,
 );

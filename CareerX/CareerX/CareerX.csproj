@@ -26,7 +26,10 @@
     <Folder Include="API\Admin\RequestObject\" />
     <Folder Include="API\CompanyAdmin\RequestObject\" />
     <Folder Include="API\HiringManager\RequestObject\" />
-    <Folder Include="API\JobSeeker\RequestObject\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
 </Project>
