@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\signuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\signuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\signuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|d:\\project\\careerx_jobportal_project\\careerx\\careerx\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|solutionrelative:careerx\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\signuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\signuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\interface\\isignuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,8 +102,7 @@
               "RelativeToolTip": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAC+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:37:48.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:37:48.266Z"
             },
             {
               "$type": "Document",
@@ -113,14 +112,14 @@
               "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\SignUpRequestService.cs",
               "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestService.cs",
               "RelativeToolTip": "Domain\\Services\\SignUp\\SignUpRequestService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwB0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T15:35:27.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "JobSeekerController.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\API\\JobSeeker\\JobSeekerController.cs",
               "RelativeDocumentMoniker": "CareerX\\API\\JobSeeker\\JobSeekerController.cs",
@@ -133,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SignUpRequestRepository.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
@@ -141,8 +140,7 @@
               "RelativeToolTip": "Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:37:49.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:37:49.757Z"
             },
             {
               "$type": "Document",
@@ -154,8 +152,7 @@
               "RelativeToolTip": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:37:46.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:37:46.11Z"
             },
             {
               "$type": "Document",
@@ -167,8 +164,7 @@
               "RelativeToolTip": "Domain\\Services\\SignUp\\DTOs\\JobSeekerSignUpRequestDTOs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:32:56.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T14:32:56.585Z"
             },
             {
               "$type": "Document",
@@ -180,8 +176,7 @@
               "RelativeToolTip": "CareerX\\API\\JobSeeker\\RequestObject\\JobSeekerSignupRequestObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:26:07.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:26:07.969Z"
             },
             {
               "$type": "Document",
@@ -193,8 +188,7 @@
               "RelativeToolTip": "Domain\\Models\\SignUpRequest.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:32:33.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T09:32:33.887Z"
             },
             {
               "$type": "Document",
