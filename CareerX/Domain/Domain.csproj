@@ -16,8 +16,6 @@
     <Folder Include="Services\Company\Interface\" />
     <Folder Include="Services\JobProvider\DTOs\" />
     <Folder Include="Services\JobProvider\Interface\" />
-    <Folder Include="Services\Jobseeker\DTOs\" />
-    <Folder Include="Services\Jobseeker\Interface\" />
     <Folder Include="Services\Job\DTOs\" />
     <Folder Include="Services\Job\Interface\" />
     <Folder Include="Services\Login\DTOs\" />
