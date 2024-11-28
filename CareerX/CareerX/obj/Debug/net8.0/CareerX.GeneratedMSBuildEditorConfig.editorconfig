@@ -17,19 +17,11 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CareerX
 build_property.RootNamespace = CareerX
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\aslam\CareerX_JobPortal_Project\CareerX\CareerX\
-=======
-build_property.ProjectDir = D:\Full stark developer\CareerX_Project\CareerX\CareerX\
->>>>>>> b77101b6466a312a9d37d890a386a993d2ff2cec
+build_property.ProjectDir = C:\Users\srees\Desktop\Project\CareerX_JobPortal_Project\CareerX\CareerX\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
-build_property.MSBuildProjectDirectory = C:\Users\aslam\CareerX_JobPortal_Project\CareerX\CareerX
-=======
-build_property.MSBuildProjectDirectory = D:\Full stark developer\CareerX_Project\CareerX\CareerX
->>>>>>> b77101b6466a312a9d37d890a386a993d2ff2cec
+build_property.MSBuildProjectDirectory = C:\Users\srees\Desktop\Project\CareerX_JobPortal_Project\CareerX\CareerX
 build_property._RazorSourceGeneratorDebug = 
