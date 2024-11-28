@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CareerX\CareerX.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Helpers\" />
     <Folder Include="Services\Admin\DTOs\" />
     <Folder Include="Services\Admin\Interface\" />
@@ -28,8 +24,6 @@
     <Folder Include="Services\Login\Interface\" />
     <Folder Include="Services\Profile\DTOs\" />
     <Folder Include="Services\Profile\Interface\" />
-    <Folder Include="Services\SignUp\DTOs\" />
-    <Folder Include="Services\SignUp\Interface\" />
     <Folder Include="Services\User\DTOs\" />
     <Folder Include="Services\User\Interface\" />
   </ItemGroup>
