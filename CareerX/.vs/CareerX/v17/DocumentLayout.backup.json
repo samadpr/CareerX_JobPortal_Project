@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|d:\\full stark developer\\careerx_project\\careerx\\careerx\\api\\companyadmin\\companyadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|solutionrelative:careerx\\api\\companyadmin\\companyadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|d:\\full stark developer\\careerx_project\\careerx\\careerx\\api\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|solutionrelative:careerx\\api\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|d:\\full stark developer\\careerx_project\\careerx\\careerx\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|solutionrelative:careerx\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|d:\\full stark developer\\careerx_project\\careerx\\careerx\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|solutionrelative:careerx\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\full stark developer\\careerx_project\\careerx\\domain\\extensions\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\extensions\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,15 +46,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\API\\Admin\\AdminController.cs",
+              "RelativeDocumentMoniker": "CareerX\\API\\Admin\\AdminController.cs",
+              "ToolTip": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\API\\Admin\\AdminController.cs",
+              "RelativeToolTip": "CareerX\\API\\Admin\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T05:54:55.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "CareerX\\WeatherForecast.cs",
+              "ToolTip": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\WeatherForecast.cs",
+              "RelativeToolTip": "CareerX\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T04:39:21.284Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CompanyAdminController.cs",
+              "DocumentMoniker": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\API\\CompanyAdmin\\CompanyAdminController.cs",
+              "RelativeDocumentMoniker": "CareerX\\API\\CompanyAdmin\\CompanyAdminController.cs",
+              "ToolTip": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\API\\CompanyAdmin\\CompanyAdminController.cs",
+              "RelativeToolTip": "CareerX\\API\\CompanyAdmin\\CompanyAdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T06:55:30.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseApiController.cs",
+              "DocumentMoniker": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\Controllers\\BaseApiController.cs",
+              "RelativeDocumentMoniker": "CareerX\\Controllers\\BaseApiController.cs",
+              "ToolTip": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\Controllers\\BaseApiController.cs",
+              "RelativeToolTip": "CareerX\\Controllers\\BaseApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T06:55:17.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AutoMapperProfiles.cs",
               "DocumentMoniker": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Extensions\\AutoMapperProfiles.cs",
               "RelativeDocumentMoniker": "Domain\\Extensions\\AutoMapperProfiles.cs",
@@ -46,12 +109,11 @@
               "RelativeToolTip": "Domain\\Extensions\\AutoMapperProfiles.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAIwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T05:29:04.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T05:29:04.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Role.cs",
               "DocumentMoniker": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Enums\\Role.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\Role.cs",
@@ -63,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Status.cs",
               "DocumentMoniker": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Enums\\Status.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\Status.cs",
@@ -75,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ApplicationServiceExtensions.cs",
               "DocumentMoniker": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Extensions\\ApplicationServiceExtensions.cs",
               "RelativeDocumentMoniker": "Domain\\Extensions\\ApplicationServiceExtensions.cs",
@@ -87,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Class1.cs",
               "RelativeDocumentMoniker": "Domain\\Class1.cs",
