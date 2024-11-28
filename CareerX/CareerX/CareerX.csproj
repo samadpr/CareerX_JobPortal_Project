@@ -25,7 +25,6 @@
   <ItemGroup>
     <Folder Include="API\Admin\RequestObject\" />
     <Folder Include="API\CompanyAdmin\RequestObject\" />
-    <Folder Include="API\HiringManager\RequestObject\" />
   </ItemGroup>
 
   <ItemGroup>
