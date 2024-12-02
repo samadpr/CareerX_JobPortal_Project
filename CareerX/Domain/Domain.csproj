@@ -12,8 +12,7 @@
     <Folder Include="Services\Admin\Interface\" />
     <Folder Include="Services\AuthUser\DTOs\" />
     <Folder Include="Services\AuthUser\Interface\" />
-    <Folder Include="Services\Company\DTOs\" />
-    <Folder Include="Services\Company\Interface\" />
+    <Folder Include="Services\CompanyAdmin\DTOs\" />
     <Folder Include="Services\JobProvider\DTOs\" />
     <Folder Include="Services\JobProvider\Interface\" />
     <Folder Include="Services\Jobseeker\DTOs\" />

@@ -6,7 +6,8 @@ namespace CareerX.API.CompanyAdmin
 {
    
     [ApiController]
-    public class CompanyAdminController :BaseApiController<CompanyAdminController>
+    public class CompanyAdminController : BaseApiController<CompanyAdminController>
     {
+
     }
 }
