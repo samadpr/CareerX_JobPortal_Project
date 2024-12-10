@@ -395,6 +395,25 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+DocumentLayout.json
+DocumentLayout.backup.json
+
+# Build artifacts
+bin/
+obj/
+*.cache
+*.nuget.cache
+
+# User-specific settings
+*.v2
+
+
 # JetBrains Rider
 *.sln.iml
 =======
