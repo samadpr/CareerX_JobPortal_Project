@@ -26,8 +26,8 @@ namespace CareerX.API.JobSeeker
         public async Task<IActionResult> JobSeekerSignupInContoller(JobSeekerSignupRequestObject jobSeekerSignupRequestObject)  //(1)first method of signup
         {
             var jobseekerSignupRequestDto = mapper.Map<JobSeekerSignUpRequestDTOs>(jobSeekerSignupRequestObject); //(2)mapping from request object to dto
-            ijobSeekerSignupService.JobSeekerSignupInService(jobseekerSignupRequestDto);//(3)passing dto to service layer
-            return Ok(jobseekerSignupRequestDto); // returning response for success 
+            ijobSeekerSignupService.JobSeekerSignupInServiceCreation(jobseekerSignupRequestDto);//(3)   passing dto to service layer
+            return Ok(jobSeekerSignupRequestObject); // returning response for success 
         }
 
 

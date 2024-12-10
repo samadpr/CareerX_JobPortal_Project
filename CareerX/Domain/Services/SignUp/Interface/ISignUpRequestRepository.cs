@@ -1,4 +1,5 @@
-﻿using Domain.Services.SignUp.DTOs;
+﻿using Domain.Models;
+using Domain.Services.SignUp.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace Domain.Services.SignUp.Interface
 {
     public interface ISignUpRequestRepository
     {
-        void JobSeekerSignupInRepository(JobSeekerSignUpRequestDTOs jobSeekerSignUpRequestDTOs);
+        Guid AddSignupRequestInRepository(SignUpRequest siginupRequest);
     }
 }
