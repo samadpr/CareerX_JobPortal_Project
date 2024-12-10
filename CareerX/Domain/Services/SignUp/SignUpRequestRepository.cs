@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Services.SignUp
 {
-    public class SignUpRequestRepository
-        //:ISignUpRequestRepository
+    public class SignUpRequestRepository:ISignUpRequestRepository
     {
     }
 }
