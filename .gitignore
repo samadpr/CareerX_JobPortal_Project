@@ -413,6 +413,8 @@ bin/
 # User-specific settings
 *.v2
 
+CareerX/CareerX/appsettings.json
+CareerX/CareerX/appsettings.Development.json
 
 # JetBrains Rider
 *.sln.iml
