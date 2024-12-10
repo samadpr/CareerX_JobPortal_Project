@@ -12,13 +12,15 @@
     <Folder Include="Services\Admin\Interface\" />
     <Folder Include="Services\AuthUser\DTOs\" />
     <Folder Include="Services\AuthUser\Interface\" />
+<<<<<<< HEAD
+    <Folder Include="Services\CompanyAdmin\DTOs\" />
+=======
     <Folder Include="Services\Company\DTOs\" />
     <Folder Include="Services\Company\Interface\" />
     <Folder Include="Services\HiringManager\Dto\" />
+>>>>>>> 677385fdf004308a9f00898623b92c0a3e1c041f
     <Folder Include="Services\JobProvider\DTOs\" />
     <Folder Include="Services\JobProvider\Interface\" />
-    <Folder Include="Services\Jobseeker\DTOs\" />
-    <Folder Include="Services\Jobseeker\Interface\" />
     <Folder Include="Services\Job\DTOs\" />
     <Folder Include="Services\Job\Interface\" />
     <Folder Include="Services\Login\DTOs\" />
