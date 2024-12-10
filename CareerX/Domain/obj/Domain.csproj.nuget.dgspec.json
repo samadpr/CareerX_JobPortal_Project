@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\trial_Project_Structure\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {}
+    "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\project\\trial_Project_Structure\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {
+    "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\trial_Project_Structure\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\project\\trial_Project_Structure\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj",
+        "projectPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\trial_Project_Structure\\CareerX_JobPortal_Project\\CareerX\\Domain\\obj\\",
+        "outputPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

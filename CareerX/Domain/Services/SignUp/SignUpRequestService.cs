@@ -3,6 +3,7 @@ using AutoMapper.Internal;
 using Domain.Enums;
 using Domain.Helpers;
 using Domain.Models;
+using Domain.Services.Email;
 using Domain.Services.Jobseeker;
 using Domain.Services.SignUp.DTOs;
 using Domain.Services.SignUp.Interface;
