@@ -24,11 +24,8 @@
 
   <ItemGroup>
     <Folder Include="API\Admin\RequestObject\" />
-<<<<<<< HEAD
-    <Folder Include="API\HiringManager\RequestObject\" />
-=======
     <Folder Include="API\CompanyAdmin\RequestObject\" />
->>>>>>> 677385fdf004308a9f00898623b92c0a3e1c041f
+    <Folder Include="API\HiringManager\RequestObject\" />
   </ItemGroup>
 
   <ItemGroup>
