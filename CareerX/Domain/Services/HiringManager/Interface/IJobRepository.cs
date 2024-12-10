@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace Domain.Services.HiringManager.Interface
 {
     internal class IJobRepository
     {
+        public void PostJob(JobPost job) { }
     }
 }
