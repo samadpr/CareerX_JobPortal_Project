@@ -7,29 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CareerX\CareerX.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Helpers\" />
     <Folder Include="Services\Admin\DTOs\" />
     <Folder Include="Services\Admin\Interface\" />
     <Folder Include="Services\AuthUser\DTOs\" />
     <Folder Include="Services\AuthUser\Interface\" />
+<<<<<<< HEAD
+    <Folder Include="Services\CompanyAdmin\DTOs\" />
+=======
     <Folder Include="Services\Company\DTOs\" />
     <Folder Include="Services\Company\Interface\" />
+    <Folder Include="Services\HiringManager\Dto\" />
+>>>>>>> 677385fdf004308a9f00898623b92c0a3e1c041f
     <Folder Include="Services\JobProvider\DTOs\" />
     <Folder Include="Services\JobProvider\Interface\" />
-    <Folder Include="Services\Jobseeker\DTOs\" />
-    <Folder Include="Services\Jobseeker\Interface\" />
     <Folder Include="Services\Job\DTOs\" />
     <Folder Include="Services\Job\Interface\" />
     <Folder Include="Services\Login\DTOs\" />
     <Folder Include="Services\Login\Interface\" />
     <Folder Include="Services\Profile\DTOs\" />
     <Folder Include="Services\Profile\Interface\" />
-    <Folder Include="Services\SignUp\DTOs\" />
-    <Folder Include="Services\SignUp\Interface\" />
     <Folder Include="Services\User\DTOs\" />
     <Folder Include="Services\User\Interface\" />
   </ItemGroup>
@@ -43,6 +40,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
