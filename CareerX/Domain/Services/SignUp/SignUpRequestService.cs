@@ -24,8 +24,6 @@ namespace Domain.Services.SignUp
         {
             var jobSeekerSignUpRequestDTO = _mapper.Map<JobSeekerSignUpRequestDTOs>(jobSeekerSignUpRequestDTOs);
             _iSignUpRequestService.JobSeekerSignupInService(jobSeekerSignUpRequestDTO);
-            return Ok(jobSeekerSignUpRequestDTO);
-
         }
     }
 }

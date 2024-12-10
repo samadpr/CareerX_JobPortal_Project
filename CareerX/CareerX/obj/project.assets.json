@@ -5235,39 +5235,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\aslam\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\asama\\.nuget\\packages\\": {},
->>>>>>> b77101b6466a312a9d37d890a386a993d2ff2cec
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "projectName": "CareerX",
       "projectPath": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\CareerX.csproj",
       "packagesPath": "C:\\Users\\aslam\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\",
-=======
-      "projectUniqueName": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
-      "projectName": "CareerX",
-      "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\CareerX.csproj",
-      "packagesPath": "C:\\Users\\asama\\.nuget\\packages\\",
-      "outputPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\obj\\",
->>>>>>> b77101b6466a312a9d37d890a386a993d2ff2cec
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\aslam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\asama\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> b77101b6466a312a9d37d890a386a993d2ff2cec
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5283,13 +5267,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-<<<<<<< HEAD
             "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\Domain\\Domain.csproj"
-=======
-            "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\Full stark developer\\CareerX_Project\\CareerX\\Domain\\Domain.csproj"
->>>>>>> b77101b6466a312a9d37d890a386a993d2ff2cec
             }
           }
         }
@@ -5361,11 +5340,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
->>>>>>> b77101b6466a312a9d37d890a386a993d2ff2cec
       }
     }
   },
@@ -5374,11 +5349,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-<<<<<<< HEAD
       "message": "Problem reading the cache file C:\\Users\\aslam\\CareerX_JobPortal_Project\\CareerX\\CareerX\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-=======
-      "message": "Problem reading the cache file D:\\Full stark developer\\CareerX_Project\\CareerX\\CareerX\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
->>>>>>> b77101b6466a312a9d37d890a386a993d2ff2cec
     }
   ]
 }
