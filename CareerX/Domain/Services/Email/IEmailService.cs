@@ -12,3 +12,4 @@ namespace Domain.Services.Email
         Task SendEmailAsync(MailRequest mailRequest);
     }
 }
+ 

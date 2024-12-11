@@ -344,3 +344,9 @@ C:\Users\aslam\CareerX_JobPortal_Project\CareerX\CareerX\obj\Debug\net8.0\refint
 C:\Users\aslam\CareerX_JobPortal_Project\CareerX\CareerX\obj\Debug\net8.0\CareerX.pdb
 C:\Users\aslam\CareerX_JobPortal_Project\CareerX\CareerX\obj\Debug\net8.0\CareerX.genruntimeconfig.cache
 C:\Users\aslam\CareerX_JobPortal_Project\CareerX\CareerX\obj\Debug\net8.0\ref\CareerX.dll
+D:\project\CareerX_JobPortal_Project\CareerX\CareerX\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\project\CareerX_JobPortal_Project\CareerX\CareerX\bin\Debug\net8.0\MailKit.dll
+D:\project\CareerX_JobPortal_Project\CareerX\CareerX\bin\Debug\net8.0\MimeKit.dll
+D:\project\CareerX_JobPortal_Project\CareerX\CareerX\bin\Debug\net8.0\NETCore.MailKit.dll
+D:\project\CareerX_JobPortal_Project\CareerX\CareerX\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\project\CareerX_JobPortal_Project\CareerX\CareerX\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

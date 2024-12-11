@@ -1,5 +1,7 @@
 ﻿using Domain.Helpers;
+using Domain.Services.SignUp.DTOs;
 using MailKit.Net.Smtp;
+using Domain.Services.Email;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using MimeKit;
@@ -20,6 +22,7 @@ namespace Domain.Services.Email
             _mailSettings = mailSettings.Value;
             _config = config;
         }
+         
         public async Task SendEmailAsync(MailRequest mailRequest)
         {
             try

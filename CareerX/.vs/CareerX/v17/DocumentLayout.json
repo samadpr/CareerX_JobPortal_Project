@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\email\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\email\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\signuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\signuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\signuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\signuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\email\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\email\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\signuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\signuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\email\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\email\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\interface\\isignuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\interface\\isignuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|d:\\project\\careerx_jobportal_project\\careerx\\careerx\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|solutionrelative:careerx\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\models\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\models\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\interface\\isignuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\interface\\isignuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|d:\\project\\careerx_jobportal_project\\careerx\\careerx\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -25,30 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\helpers\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\helpers\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\signuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\signuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\interface\\isignuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\interface\\isignuprequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\services\\signup\\interface\\isignuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\services\\signup\\interface\\isignuprequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|d:\\project\\careerx_jobportal_project\\careerx\\careerx\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|solutionrelative:careerx\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\models\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\models\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|d:\\project\\careerx_jobportal_project\\careerx\\careerx\\api\\jobseeker\\requestobject\\jobseekersignuprequestobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{07286546-EC6B-4E16-BEE2-C17D359D11E7}|CareerX\\CareerX.csproj|solutionrelative:careerx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|d:\\project\\careerx_jobportal_project\\careerx\\domain\\extensions\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52C8AE3A-5512-4E96-9C51-14CD1732FCB2}|Domain\\Domain.csproj|solutionrelative:domain\\extensions\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -118,37 +118,137 @@
       "DocumentGroups": [
         {
           "DockedHeight": 264,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\Email\\EmailService.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\Email\\EmailService.cs",
-              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\Email\\EmailService.cs",
-              "RelativeToolTip": "Domain\\Services\\Email\\EmailService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAYwA0AAAApAAAAAAAAAA==",
+              "Title": "SignUpRequestService.cs",
+              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestService.cs",
+              "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\SignUpRequestService.cs",
+              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestService.cs",
+              "RelativeToolTip": "Domain\\Services\\SignUp\\SignUpRequestService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T15:03:24.867Z",
+              "WhenOpened": "2024-11-27T15:35:27.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ISignUpRequestService.cs",
+              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\Interface\\ISignUpRequestService.cs",
+              "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestService.cs",
+              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\Interface\\ISignUpRequestService.cs",
+              "RelativeToolTip": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:37:48.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SignUpRequestRepository.cs",
+              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
+              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
+              "RelativeToolTip": "Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwBEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:37:49.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\Email\\IEmailService.cs",
               "RelativeDocumentMoniker": "Domain\\Services\\Email\\IEmailService.cs",
               "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\Email\\IEmailService.cs",
               "RelativeToolTip": "Domain\\Services\\Email\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T08:04:41.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\Email\\EmailService.cs",
+              "RelativeDocumentMoniker": "Domain\\Services\\Email\\EmailService.cs",
+              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\Email\\EmailService.cs",
+              "RelativeToolTip": "Domain\\Services\\Email\\EmailService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:03:24.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JobSeekerController.cs",
+              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\API\\JobSeeker\\JobSeekerController.cs",
+              "RelativeDocumentMoniker": "CareerX\\API\\JobSeeker\\JobSeekerController.cs",
+              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\API\\JobSeeker\\JobSeekerController.cs",
+              "RelativeToolTip": "CareerX\\API\\JobSeeker\\JobSeekerController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:42:18.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ISignUpRequestRepository.cs",
+              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\Interface\\ISignUpRequestRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestRepository.cs",
+              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\Interface\\ISignUpRequestRepository.cs",
+              "RelativeToolTip": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:37:46.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationServiceExtensions.cs",
+              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Extensions\\ApplicationServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Domain\\Extensions\\ApplicationServiceExtensions.cs",
+              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Extensions\\ApplicationServiceExtensions.cs",
+              "RelativeToolTip": "Domain\\Extensions\\ApplicationServiceExtensions.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T09:30:29.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignUpRequest.cs",
+              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\SignUpRequest.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\SignUpRequest.cs",
+              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\SignUpRequest.cs",
+              "RelativeToolTip": "Domain\\Models\\SignUpRequest.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwBQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T09:32:33.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Status.cs",
+              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Enums\\Status.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\Status.cs",
+              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Enums\\Status.cs",
+              "RelativeToolTip": "Domain\\Enums\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:27:46.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MailRequest.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Helpers\\MailRequest.cs",
               "RelativeDocumentMoniker": "Domain\\Helpers\\MailRequest.cs",
@@ -160,44 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SignUpRequestService.cs",
-              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestService.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\SignUpRequestService.cs",
-              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestService.cs",
-              "RelativeToolTip": "Domain\\Services\\SignUp\\SignUpRequestService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:35:27.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ISignUpRequestService.cs",
-              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\Interface\\ISignUpRequestService.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestService.cs",
-              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\Interface\\ISignUpRequestService.cs",
-              "RelativeToolTip": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:37:48.266Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SignUpRequestRepository.cs",
-              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
-              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
-              "RelativeToolTip": "Domain\\Services\\SignUp\\SignUpRequestRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:37:49.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\appsettings.json",
               "RelativeDocumentMoniker": "CareerX\\appsettings.json",
@@ -205,12 +268,11 @@
               "RelativeToolTip": "CareerX\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-27T10:30:31.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T10:30:31.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "MailSettings.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Helpers\\MailSettings.cs",
               "RelativeDocumentMoniker": "Domain\\Helpers\\MailSettings.cs",
@@ -222,43 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ISignUpRequestRepository.cs",
-              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\Interface\\ISignUpRequestRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestRepository.cs",
-              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\Interface\\ISignUpRequestRepository.cs",
-              "RelativeToolTip": "Domain\\Services\\SignUp\\Interface\\ISignUpRequestRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:37:46.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "JobSeekerController.cs",
-              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\API\\JobSeeker\\JobSeekerController.cs",
-              "RelativeDocumentMoniker": "CareerX\\API\\JobSeeker\\JobSeekerController.cs",
-              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\API\\JobSeeker\\JobSeekerController.cs",
-              "RelativeToolTip": "CareerX\\API\\JobSeeker\\JobSeekerController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBwAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:42:18.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Status.cs",
-              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Enums\\Status.cs",
-              "RelativeDocumentMoniker": "Domain\\Enums\\Status.cs",
-              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Enums\\Status.cs",
-              "RelativeToolTip": "Domain\\Enums\\Status.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T05:27:46.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "JobSeekerSignupRequestObject.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\API\\JobSeeker\\RequestObject\\JobSeekerSignupRequestObject.cs",
               "RelativeDocumentMoniker": "CareerX\\API\\JobSeeker\\RequestObject\\JobSeekerSignupRequestObject.cs",
@@ -270,19 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SignUpRequest.cs",
-              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\SignUpRequest.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\SignUpRequest.cs",
-              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\SignUpRequest.cs",
-              "RelativeToolTip": "Domain\\Models\\SignUpRequest.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:32:33.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "JobSeekerService.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\JobseekerProfile\\JobSeekerService.cs",
               "RelativeDocumentMoniker": "Domain\\Services\\JobseekerProfile\\JobSeekerService.cs",
@@ -294,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "JobSeekerRepository.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\JobseekerProfile\\JobSeekerRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Services\\JobseekerProfile\\JobSeekerRepository.cs",
@@ -306,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "JobSeekerSignUpRequestDTOs.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Services\\SignUp\\DTOs\\JobSeekerSignUpRequestDTOs.cs",
               "RelativeDocumentMoniker": "Domain\\Services\\SignUp\\DTOs\\JobSeekerSignUpRequestDTOs.cs",
@@ -318,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "JobSeekerProfile.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\JobSeekerProfile.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\JobSeekerProfile.cs",
@@ -330,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "SavedJob.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\SavedJob.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\SavedJob.cs",
@@ -353,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "JobSeeker.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\JobSeeker.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\JobSeeker.cs",
@@ -365,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "CareerxDbContext.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\CareerxDbContext.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\CareerxDbContext.cs",
@@ -377,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "SystemUser.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\SystemUser.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\SystemUser.cs",
@@ -389,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "CompanyAdmin.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\CompanyAdmin.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\CompanyAdmin.cs",
@@ -401,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "AuthUser.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Models\\AuthUser.cs",
               "RelativeDocumentMoniker": "Domain\\Models\\AuthUser.cs",
@@ -414,18 +428,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "ApplicationServiceExtensions.cs",
-              "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeDocumentMoniker": "Domain\\Extensions\\ApplicationServiceExtensions.cs",
-              "ToolTip": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\Domain\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeToolTip": "Domain\\Extensions\\ApplicationServiceExtensions.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:30:29.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\project\\CareerX_JobPortal_Project\\CareerX\\CareerX\\Program.cs",
               "RelativeDocumentMoniker": "CareerX\\Program.cs",

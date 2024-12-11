@@ -1,5 +1,8 @@
 ﻿
 using Domain.Models;
+using Domain.Services.Email;
+using Domain.Services.SignUp.Interface;
+using Domain.Services.SignUp;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +21,9 @@ namespace Domain.Extensions
             services.AddDbContext<CareerxDbContext>(options =>
                options.UseSqlServer(config.GetConnectionString("Data Source=priyanka;Initial Catalog=CareerxDB;Integrated Security=True;Trust Server Certificate=True"))
             );
+            services.AddTransient<IEmailService, EmailService>();
+            services.AddScoped<ISignUpRequestRepository, SignUpRequestRepository>();
+            services.AddScoped<ISignUpRequestService, SignUpRequestService>();
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             return services;
         }
