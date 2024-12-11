@@ -418,8 +418,7 @@ CareerX/CareerX/appsettings.Development.json
 
 # JetBrains Rider
 *.sln.iml
-=======
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 /CareerX/CareerX.sln
