@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Services\Admin\DTOs\" />
+    <Folder Include="Services\Admin\Interface\" />
+    <Folder Include="Services\AuthUser\DTOs\" />
+    <Folder Include="Services\AuthUser\Interface\" />
+    <Folder Include="Services\Company\DTOs\" />
+    <Folder Include="Services\Company\Interface\" />
+    <Folder Include="Services\JobProvider\DTOs\" />
+    <Folder Include="Services\JobProvider\Interface\" />
+    <Folder Include="Services\Jobseeker\DTOs\" />
+    <Folder Include="Services\Jobseeker\Interface\" />
+    <Folder Include="Services\Job\DTOs\" />
+    <Folder Include="Services\Job\Interface\" />
+    <Folder Include="Services\Login\DTOs\" />
+    <Folder Include="Services\Login\Interface\" />
+    <Folder Include="Services\Profile\DTOs\" />
+    <Folder Include="Services\Profile\Interface\" />
+    <Folder Include="Services\User\DTOs\" />
+    <Folder Include="Services\User\Interface\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
