@@ -7,15 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Helpers\" />
     <Folder Include="Services\Admin\DTOs\" />
     <Folder Include="Services\Admin\Interface\" />
     <Folder Include="Services\AuthUser\DTOs\" />
     <Folder Include="Services\AuthUser\Interface\" />
     <Folder Include="Services\Company\DTOs\" />
     <Folder Include="Services\Company\Interface\" />
-    <Folder Include="Services\HiringManager\Dto\" />
     <Folder Include="Services\JobProvider\DTOs\" />
     <Folder Include="Services\JobProvider\Interface\" />
+    <Folder Include="Services\Jobseeker\DTOs\" />
+    <Folder Include="Services\Jobseeker\Interface\" />
     <Folder Include="Services\Job\DTOs\" />
     <Folder Include="Services\Job\Interface\" />
     <Folder Include="Services\Login\DTOs\" />
@@ -29,7 +31,6 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-    <PackageReference Include="MailKit" Version="4.9.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -40,8 +41,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="MimeKit" Version="4.9.0" />
-    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
   </ItemGroup>
 
 </Project>

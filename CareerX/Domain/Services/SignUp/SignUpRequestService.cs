@@ -36,13 +36,9 @@ namespace Domain.Services.SignUp
             //then map it to JobSeekerSignUpRequestDTOs
             //then pass it to JobSeekerSignupInService
         {
-            var jobSeekerSignUpRequest = _mapper.Map<SignUpRequest>(jobSeekerSignUpRequestDTOs);
-            var sighnUpId = _iSignUpRequestRepository.AddSignupRequestInRepository(jobSeekerSignUpRequest);
-            MailRequest mailRequest = new MailRequest();
-            mailRequest.Subject = "HireMeNow SignUp Verification";
-            mailRequest.Body = "http://localhost:4200/set-password?signupid=" + sighnUpId.ToString();
-            mailRequest.ToEmail = jobSeekerSignUpRequest.Email;
-            await emailService.SendEmailAsync(mailRequest);
+            var jobSeekerSignUpRequestDTO = _mapper.Map<JobSeekerSignUpRequestDTOs>(jobSeekerSignUpRequestDTOs);
+            _iSignUpRequestService.JobSeekerSignupInService(jobSeekerSignUpRequestDTO);
+            
 
         }
     }
