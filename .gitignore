@@ -394,6 +394,26 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+# Visual Studio
+.CareerX/.vs
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+DocumentLayout.json
+DocumentLayout.backup.json
+
+# Build artifacts
+bin/
+.CareerX/obj/
+*.cache
+*.nuget.cache
+
+# User-specific settings
+*.v2
+
+CareerX/CareerX/appsettings.json
+CareerX/CareerX/appsettings.Development.json
 
 # JetBrains Rider
 *.sln.iml
