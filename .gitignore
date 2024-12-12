@@ -411,7 +411,7 @@ bin/
 
 # User-specific settings
 *.v2
-
+Migrations/*.cs
 CareerX/CareerX/appsettings.json
 CareerX/CareerX/appsettings.Development.json
 
@@ -421,3 +421,7 @@ CareerX/CareerX/appsettings.Development.json
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
+/CareerX/Domain/Extensions/AutoMapperProfiles.cs
+/CareerX/Domain/Extensions/AutoMapperProfiles.cs
+/CareerX/Domain/Extensions/AutoMapperProfiles.cs
+/CareerX/Domain/Extensions/AutoMapperProfiles.cs

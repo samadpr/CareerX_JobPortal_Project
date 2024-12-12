@@ -1,7 +1,7 @@
 using System.Text;
  
 using Microsoft.EntityFrameworkCore;
-using Domain.Extensions;
+using CareerX.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApplicationServices1(builder.Configuration);

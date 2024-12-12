@@ -11,8 +11,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain.Extensions;
 
-namespace Domain.Extensions
+namespace CareerX.Extensions
 {
     public static class ApplicationServiceExtensions
     {
@@ -21,10 +22,10 @@ namespace Domain.Extensions
             services.AddDbContext<CareerxDbContext>(options =>
                options.UseSqlServer(config.GetConnectionString("Data Source=priyanka;Initial Catalog=CareerxDB;Integrated Security=True;Trust Server Certificate=True"))
             );
-            //services.AddTransient<IEmailService, EmailService>();
-            //services.AddScoped<ISignUpRequestRepository, SignUpRequestRepository>();
-            //services.AddScoped<ISignUpRequestService, SignUpRequestService>();
-            //services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
+            services.AddTransient<IEmailService, EmailService>();
+            services.AddScoped<ISignUpRequestRepository, SignUpRequestRepository>();
+            services.AddScoped<ISignUpRequestService, SignUpRequestService>();
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             return services;
         }
     }
