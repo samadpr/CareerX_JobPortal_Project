@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Models;
 
@@ -11,20 +12,23 @@ public partial class JobPost
 
     public string JobSummary { get; set; } = null!;
 
+    [ForeignKey(nameof(Location))]
     public Guid LocationId { get; set; }
-
+    [ForeignKey(nameof(CompanyAdmin))]
     public Guid CompanyId { get; set; }
 
+    [ForeignKey(nameof(Category))]
     public Guid CategoryId { get; set; }
 
+    [ForeignKey(nameof(Industry))]
     public Guid IndustryId { get; set; }
-
+    [ForeignKey(nameof(HiringManager))]
     public Guid PostedBy { get; set; }
 
     public DateTime PostedDate { get; set; }
-
+    [ForeignKey(nameof(Qualification))]
     public Guid QualificationId { get; set; }
-
+    [ForeignKey(nameof(Skill))]
     public Guid SkillId { get; set; }
 
     public virtual JobCategory Category { get; set; } = null!;
