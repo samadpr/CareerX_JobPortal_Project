@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domain.Migrations
 {
     [DbContext(typeof(CareerxDbContext))]
-    [Migration("20241212055353_initail")]
-    partial class initail
+    [Migration("20241225061730_nullValueAllow")]
+    partial class nullValueAllow
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -72,38 +72,32 @@ namespace Domain.Migrations
                         .HasDefaultValueSql("(newid())");
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AdminName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<Guid>("IndustryId")
+                    b.Property<Guid?>("IndustryId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("LegalName")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<Guid>("Location")
+                    b.Property<Guid?>("Location")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<long>("Phone")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Summary")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Website")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -609,13 +603,11 @@ namespace Domain.Migrations
                     b.HasOne("Domain.Models.Industry", "Industry")
                         .WithMany("CompanyAdmins")
                         .HasForeignKey("IndustryId")
-                        .IsRequired()
                         .HasConstraintName("FK_CompanyAdmin_Industry");
 
                     b.HasOne("Domain.Models.Location", "LocationNavigation")
                         .WithMany("CompanyAdmins")
                         .HasForeignKey("Location")
-                        .IsRequired()
                         .HasConstraintName("FK_CompanyAdmin_Location");
 
                     b.Navigation("Industry");

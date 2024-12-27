@@ -19,13 +19,41 @@ namespace Domain.Services.SignUp
         {
             _context = context;
         }
-       public  Guid AddSignupRequestInRepository(SignUpRequest siginUpRequest)
+       public  Guid AddSignupRequestInRepository(SignUpRequest signUpRequest)
         {
-            siginUpRequest.Status = (int)Status.PENDING;
-            _context.SignUpRequests.AddAsync(siginUpRequest);
+            signUpRequest.Status = Enums.Status.PENDING;
+            _context.SignUpRequests.AddAsync(signUpRequest);
             _context.SaveChanges();
-            return siginUpRequest.Id;
+            return signUpRequest.Id;   
         }
-        
+        public async Task<SignUpRequest> GetSignupRequestById(Guid id)
+        {
+            return await _context.SignUpRequests.FindAsync(id);
+        }
+        public void UpdateSignupRequestInRepository(SignUpRequest signupRequest)
+        {
+            _context.SignUpRequests.Update(signupRequest);
+            _context.SaveChanges();
+        }
+        public async Task AddJobSeekerAsync(Models.JobSeeker jobseeker)
+        {
+            _context.JobSeekers.AddAsync(jobseeker);
+            await _context.SaveChangesAsync();
+            JobSeekerProfile jobSeekerProfile = new JobSeekerProfile();
+ jobSeekerProfile.JobSeekerId = jobseeker.Id;
+            _context.JobSeekerProfiles.AddAsync(jobSeekerProfile);
+            await _context.SaveChangesAsync();
+        }
+
+
+        public async Task AddCompanyAsync(Models.CompanyAdmin company)
+        {
+            _context.CompanyAdmins.AddAsync(company);
+            await _context.SaveChangesAsync();
+        }
+
+
+
+
     }
 }

@@ -19,7 +19,7 @@ namespace Domain.Extensions
         public static IServiceCollection AddApplicationServices1(this IServiceCollection services, IConfiguration config)
         {
             services.AddDbContext<CareerxDbContext>(options =>
-               options.UseSqlServer(config.GetConnectionString("Data Source=priyanka;Initial Catalog=CareerxDB;Integrated Security=True;Trust Server Certificate=True"))
+               options.UseSqlServer(config.GetConnectionString("Data Source=ABDUL-SAMAD;Initial Catalog=CareerX_DB;Integrated Security=True;Trust Server Certificate=True"))
             );
             //services.AddTransient<IEmailService, EmailService>();
             //services.AddScoped<ISignUpRequestRepository, SignUpRequestRepository>();

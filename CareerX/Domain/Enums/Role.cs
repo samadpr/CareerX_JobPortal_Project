@@ -8,6 +8,6 @@ namespace Domain.Enums
 {
     public enum Role
     {
-         ADMIN, JOB_SEEKER, JOB_PROVIDER, COMPANY_USER
+         ADMIN, JOB_SEEKER, JOB_PROVIDER, COMPANY_ADMIN
     }
 }

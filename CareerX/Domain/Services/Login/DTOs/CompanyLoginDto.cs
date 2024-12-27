@@ -1,27 +1,29 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Domain.Enums;
 
-namespace Domain.Models
+namespace Domain.Services.Login.DTOs
 {
-    public class SystemUser
+    public class CompanyLoginDto
     {
-        [Key]
-        
-
         public Guid Id { get; set; }
         public string? UserName { get; set; }
         public string FirstName { get; set; }
         public string? LastName { get; set; }
+
         public string Phone { get; set; }
         [Required]
         [EmailAddress]
+        public string Role { get; set; }
         public string Email { get; set; }
-        public Role? Role { get; set; }
+        [Required]
+        public string Password { get; set; }
+
+        public string? Token { get; set; }
+
+        public CompanyLoginDto() { }
     }
 }

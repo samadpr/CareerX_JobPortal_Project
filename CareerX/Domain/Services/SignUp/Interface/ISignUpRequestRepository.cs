@@ -10,6 +10,12 @@ namespace Domain.Services.SignUp.Interface
 {
     public interface ISignUpRequestRepository
     {
-        Guid AddSignupRequestInRepository(SignUpRequest siginupRequest);
+        Guid AddSignupRequestInRepository(SignUpRequest signupRequest);
+        void UpdateSignupRequestInRepository(SignUpRequest signupRequest);
+        Task<SignUpRequest> GetSignupRequestById(Guid id);
+        Task AddJobSeekerAsync(Models.JobSeeker jobseeker);
+
+
+        Task AddCompanyAsync(Models.CompanyAdmin companyAdmin);
     }
 }

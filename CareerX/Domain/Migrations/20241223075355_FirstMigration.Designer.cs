@@ -4,6 +4,7 @@ using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domain.Migrations
 {
     [DbContext(typeof(CareerxDbContext))]
-    partial class CareerxDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241223075355_FirstMigration")]
+    partial class FirstMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,6 +72,7 @@ namespace Domain.Migrations
                         .HasDefaultValueSql("(newid())");
 
                     b.Property<string>("Address")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AdminName")
@@ -80,24 +84,26 @@ namespace Domain.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<Guid?>("IndustryId")
+                    b.Property<Guid>("IndustryId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("LegalName")
+                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<Guid?>("Location")
+                    b.Property<Guid>("Location")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Phone")
+                    b.Property<long>("Phone")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Summary")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Summary")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Website")
+                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -603,11 +609,13 @@ namespace Domain.Migrations
                     b.HasOne("Domain.Models.Industry", "Industry")
                         .WithMany("CompanyAdmins")
                         .HasForeignKey("IndustryId")
+                        .IsRequired()
                         .HasConstraintName("FK_CompanyAdmin_Industry");
 
                     b.HasOne("Domain.Models.Location", "LocationNavigation")
                         .WithMany("CompanyAdmins")
                         .HasForeignKey("Location")
+                        .IsRequired()
                         .HasConstraintName("FK_CompanyAdmin_Location");
 
                     b.Navigation("Industry");
