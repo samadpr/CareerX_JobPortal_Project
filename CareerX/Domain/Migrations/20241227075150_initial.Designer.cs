@@ -4,6 +4,7 @@ using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domain.Migrations
 {
     [DbContext(typeof(CareerxDbContext))]
-    partial class CareerxDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241227075150_initial")]
+    partial class initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -290,13 +293,13 @@ namespace Domain.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("(newid())");
 
-                    b.Property<Guid?>("CategoryId")
+                    b.Property<Guid>("CategoryId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("CompanyId")
+                    b.Property<Guid>("CompanyId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("IndustryId")
+                    b.Property<Guid>("IndustryId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("JobSummary")
@@ -308,21 +311,21 @@ namespace Domain.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<Guid?>("LocationId")
+                    b.Property<Guid>("LocationId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("PostedBy")
+                    b.Property<Guid>("PostedBy")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime?>("PostedDate")
+                    b.Property<DateTime>("PostedDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
                         .HasDefaultValueSql("(getdate())");
 
-                    b.Property<Guid?>("QualificationId")
+                    b.Property<Guid>("QualificationId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("SkillId")
+                    b.Property<Guid>("SkillId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id")
@@ -696,36 +699,43 @@ namespace Domain.Migrations
                     b.HasOne("Domain.Models.JobCategory", "Category")
                         .WithMany("JobPosts")
                         .HasForeignKey("CategoryId")
+                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Category");
 
                     b.HasOne("Domain.Models.CompanyAdmin", "Company")
                         .WithMany("JobPosts")
                         .HasForeignKey("CompanyId")
+                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Company");
 
                     b.HasOne("Domain.Models.Industry", "Industry")
                         .WithMany("JobPosts")
                         .HasForeignKey("IndustryId")
+                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Industry");
 
                     b.HasOne("Domain.Models.Location", "Location")
                         .WithMany("JobPosts")
                         .HasForeignKey("LocationId")
+                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Location");
 
                     b.HasOne("Domain.Models.HiringManager", "PostedByNavigation")
                         .WithMany("JobPosts")
                         .HasForeignKey("PostedBy")
+                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_PostedBy");
 
                     b.HasOne("Domain.Models.Qualification", "Qualification")
                         .WithMany("JobPosts")
                         .HasForeignKey("QualificationId")
+                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Qualification");
 
                     b.HasOne("Domain.Models.Skill", "Skill")
                         .WithMany("JobPosts")
                         .HasForeignKey("SkillId")
+                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Skill");
 
                     b.Navigation("Category");

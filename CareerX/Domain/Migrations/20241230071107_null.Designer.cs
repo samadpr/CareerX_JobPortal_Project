@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domain.Migrations
 {
     [DbContext(typeof(CareerxDbContext))]
-    [Migration("20241223075355_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20241230071107_null")]
+    partial class @null
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -72,7 +72,6 @@ namespace Domain.Migrations
                         .HasDefaultValueSql("(newid())");
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AdminName")
@@ -84,26 +83,24 @@ namespace Domain.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<Guid>("IndustryId")
+                    b.Property<Guid?>("IndustryId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("LegalName")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<Guid>("Location")
+                    b.Property<Guid?>("Location")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<long>("Phone")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("Summary")
+                    b.Property<string>("Phone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Summary")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Website")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -296,13 +293,13 @@ namespace Domain.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("(newid())");
 
-                    b.Property<Guid>("CategoryId")
+                    b.Property<Guid?>("CategoryId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CompanyId")
+                    b.Property<Guid?>("CompanyId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("IndustryId")
+                    b.Property<Guid?>("IndustryId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("JobSummary")
@@ -314,18 +311,18 @@ namespace Domain.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<Guid>("LocationId")
+                    b.Property<Guid?>("LocationId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("PostedBy")
+                    b.Property<Guid?>("PostedBy")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("PostedDate")
+                    b.Property<DateTime?>("PostedDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
                         .HasDefaultValueSql("(getdate())");
 
-                    b.Property<Guid>("QualificationId")
+                    b.Property<Guid?>("QualificationId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("SkillId")
@@ -609,13 +606,11 @@ namespace Domain.Migrations
                     b.HasOne("Domain.Models.Industry", "Industry")
                         .WithMany("CompanyAdmins")
                         .HasForeignKey("IndustryId")
-                        .IsRequired()
                         .HasConstraintName("FK_CompanyAdmin_Industry");
 
                     b.HasOne("Domain.Models.Location", "LocationNavigation")
                         .WithMany("CompanyAdmins")
                         .HasForeignKey("Location")
-                        .IsRequired()
                         .HasConstraintName("FK_CompanyAdmin_Location");
 
                     b.Navigation("Industry");
@@ -704,37 +699,31 @@ namespace Domain.Migrations
                     b.HasOne("Domain.Models.JobCategory", "Category")
                         .WithMany("JobPosts")
                         .HasForeignKey("CategoryId")
-                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Category");
 
                     b.HasOne("Domain.Models.CompanyAdmin", "Company")
                         .WithMany("JobPosts")
                         .HasForeignKey("CompanyId")
-                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Company");
 
                     b.HasOne("Domain.Models.Industry", "Industry")
                         .WithMany("JobPosts")
                         .HasForeignKey("IndustryId")
-                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Industry");
 
                     b.HasOne("Domain.Models.Location", "Location")
                         .WithMany("JobPosts")
                         .HasForeignKey("LocationId")
-                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Location");
 
                     b.HasOne("Domain.Models.HiringManager", "PostedByNavigation")
                         .WithMany("JobPosts")
                         .HasForeignKey("PostedBy")
-                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_PostedBy");
 
                     b.HasOne("Domain.Models.Qualification", "Qualification")
                         .WithMany("JobPosts")
                         .HasForeignKey("QualificationId")
-                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Qualification");
 
                     b.HasOne("Domain.Models.Skill", "Skill")

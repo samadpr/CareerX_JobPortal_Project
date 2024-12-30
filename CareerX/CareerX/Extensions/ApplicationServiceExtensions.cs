@@ -1,4 +1,191 @@
 ﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 using Domain.Models;
 using Domain.Services.Email;
 using Domain.Services.SignUp.Interface;
@@ -18,6 +205,8 @@ using Domain.Services.Login.Interface;
 using Domain.Services.Login;
 using Domain.Services.Company.Interface;
 using Domain.Services.Company;
+using Domain.Services.HiringManager.Interface;
+using Domain.Services.HiringManager;
 
 
 namespace CareerX.Extensions
@@ -27,7 +216,7 @@ namespace CareerX.Extensions
         public static IServiceCollection AddApplicationServices1(this IServiceCollection services, IConfiguration config)
         {
             services.AddDbContext<CareerxDbContext>(options =>
-               options.UseSqlServer(config.GetConnectionString("Data Source=ABDUL-SAMAD;Initial Catalog=CareerX_DB;Integrated Security=True;Trust Server Certificate=True"))
+               options.UseSqlServer(config.GetConnectionString("Data Source=LAPTOP-5M9L3AJN\\MSSQLSERVER02;Initial Catalog=careerX;Integrated Security=True;Encrypt=True;Trust Server Certificate=True"))
             );
             services.AddTransient<IEmailService, EmailService>();
             services.AddScoped<ISignUpRequestRepository, SignUpRequestRepository>();
@@ -40,6 +229,8 @@ namespace CareerX.Extensions
 
             services.AddScoped<ICompanyService, CompanyService>();
             services.AddScoped<ICompanyRepository, CompanyRepository>();
+            services.AddScoped<IJobService, JobService>();
+            services.AddScoped<IJobRepository, JobRepository>();
 
             return services;
         }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Domain.Models;
 
 public partial class HiringManager
@@ -8,7 +8,7 @@ public partial class HiringManager
     public Guid Id { get; set; }
 
     public string Email { get; set; } = null!;
-
+    [ForeignKey(nameof(CompanyAdmin))]
     public Guid? CompanyId { get; set; }
 
     public string? UserName { get; set; }
