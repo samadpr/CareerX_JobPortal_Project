@@ -12,42 +12,35 @@ public partial class JobPost
 
     public string JobSummary { get; set; } = null!;
 
-    [ForeignKey(nameof(Location))]
-    public Guid LocationId { get; set; }
-    [ForeignKey(nameof(CompanyAdmin))]
-    public Guid CompanyId { get; set; }
+    public Guid? LocationId { get; set; }
+    public Guid? CompanyId { get; set; }
 
-    [ForeignKey(nameof(Category))]
-    public Guid CategoryId { get; set; }
+    public Guid? CategoryId { get; set; }
 
-    [ForeignKey(nameof(Industry))]
-    public Guid IndustryId { get; set; }
-    [ForeignKey(nameof(HiringManager))]
-    public Guid PostedBy { get; set; }
+    public Guid? IndustryId { get; set; }
+    public Guid? PostedBy { get; set; }
 
-    public DateTime PostedDate { get; set; }
-    [ForeignKey(nameof(Qualification))]
-    public Guid QualificationId { get; set; }
-    [ForeignKey(nameof(Skill))]
-    public Guid SkillId { get; set; }
+    public DateTime? PostedDate { get; set; }
+    public Guid? QualificationId { get; set; } 
+    public Guid? SkillId { get; set; }
 
-    public virtual JobCategory Category { get; set; } = null!;
+    public virtual JobCategory? Category { get; set; } 
 
-    public virtual CompanyAdmin Company { get; set; } = null!;
+    public virtual CompanyAdmin? Company { get; set; } 
 
-    public virtual Industry Industry { get; set; } = null!;
+    public virtual Industry? Industry { get; set; } 
 
-    public virtual ICollection<Interview> Interviews { get; set; } = new List<Interview>();
+    public virtual ICollection<Interview>? Interviews { get; set; } = new List<Interview>();
 
-    public virtual ICollection<JobApplication> JobApplications { get; set; } = new List<JobApplication>();
+    public virtual ICollection<JobApplication>? JobApplications { get; set; } = new List<JobApplication>();
 
-    public virtual Location Location { get; set; } = null!;
+    public virtual Location? Location { get; set; }
 
-    public virtual HiringManager PostedByNavigation { get; set; } = null!;
+    public virtual HiringManager? PostedByNavigation { get; set; } 
 
-    public virtual Qualification Qualification { get; set; } = null!;
+    public virtual Qualification? Qualification { get; set; } 
 
-    public virtual ICollection<SavedJob> SavedJobs { get; set; } = new List<SavedJob>();
+    public virtual ICollection<SavedJob>? SavedJobs { get; set; } = new List<SavedJob>();
 
-    public virtual Skill Skill { get; set; } = null!;
+    public virtual Skill? Skill { get; set; } 
 }

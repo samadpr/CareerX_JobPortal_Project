@@ -4,6 +4,7 @@ using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domain.Migrations
 {
     [DbContext(typeof(CareerxDbContext))]
-    partial class CareerxDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241230071107_null")]
+    partial class @null
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -322,7 +325,7 @@ namespace Domain.Migrations
                     b.Property<Guid?>("QualificationId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("SkillId")
+                    b.Property<Guid>("SkillId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id")
@@ -726,6 +729,7 @@ namespace Domain.Migrations
                     b.HasOne("Domain.Models.Skill", "Skill")
                         .WithMany("JobPosts")
                         .HasForeignKey("SkillId")
+                        .IsRequired()
                         .HasConstraintName("FK_JobPosts_Skill");
 
                     b.Navigation("Category");
