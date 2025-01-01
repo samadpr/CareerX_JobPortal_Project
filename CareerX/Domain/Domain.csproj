@@ -7,12 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Admin\DTOs\" />
-    <Folder Include="Services\Admin\Interface\" />
     <Folder Include="Services\HiringManager\Dto\" />
     <Folder Include="Services\JobProvider\DTOs\" />
     <Folder Include="Services\JobProvider\Interface\" />
-    <Folder Include="Services\Job\DTOs\" />
     <Folder Include="Services\Job\Interface\" />
     <Folder Include="Services\Profile\DTOs\" />
     <Folder Include="Services\Profile\Interface\" />

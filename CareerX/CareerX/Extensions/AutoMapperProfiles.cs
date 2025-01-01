@@ -1,8 +1,12 @@
 ﻿using AutoMapper;
+using CareerX.API.Admin.RequestObject;
 using CareerX.API.CompanyAdmin.RequestObject;
+using CareerX.API.HiringManager.RequestObject;
 using CareerX.API.JobSeeker.RequestObject;
 using Domain.Models;
+using Domain.Services.Admin.DTOs;
 using Domain.Services.Company.DTOs;
+using Domain.Services.Job.DTOs;
 using Domain.Services.Login.DTOs;
 using Domain.Services.SignUp.DTOs;
 using System;
@@ -33,6 +37,16 @@ namespace Domain.Extensions
 
             CreateMap<CompanyDetailsRequestObject, CompanyDto>().ReverseMap();
             CreateMap<CompanyAdmin, CompanyDto>().ReverseMap();
+
+            CreateMap<HRPostJobRequestObject, JobPostDtos>().ReverseMap();
+            CreateMap<JobPostDtos, JobPost>().ReverseMap();
+            CreateMap<AdminLoginRequests, AdminLoginDtos>().ReverseMap();
+
+
+            CreateMap<CategoryRequests, CategoryDtos>().ReverseMap();
+            CreateMap<CategoryDtos, JobCategory>().ReverseMap();
+            
+
         }
     }
 }
