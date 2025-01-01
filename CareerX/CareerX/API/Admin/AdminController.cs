@@ -104,7 +104,188 @@ namespace CareerX.API.Admin
             }
         }
 
+        [HttpPost]
+        [Route("admin/add-job-skill")]
+        public async Task<IActionResult> AddJobSkill(SkillRequest jobSkillRequests)
+        {
+            var jobSkill = mapper.Map<SkillsDtos>(jobSkillRequests);
+            var result = await _adminServices.AddSkillAsync(jobSkill);
+            if (result != null)
+            {
+                return Ok(jobSkill.Name + " Added Successfully");
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
 
+        [HttpDelete]
+        [Route("admin/delete-job-skill/{id}")]
+        public async Task<IActionResult> DeleteJobSkillById(Guid id)
+        {
+            var result = await _adminServices.RemoveSkillAsync(id);
+            if (result)
+            {
+                return Ok(" Deleted Successfully");
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
 
+        [HttpGet]
+        [Route("admin/get-all-skills")]
+        public async Task<IActionResult> GetAllSkills()
+        {
+            var result = await _adminServices.GetSkills();
+            if (result != null)
+            {
+                return Ok(mapper.Map<List<SkillsDtos>>(result));
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpPost]
+        [Route("admin/add-location")]
+        public async Task<IActionResult> AddJobLocation(LocationRequests jobLocationRequests)
+        {
+            var jobLocation = mapper.Map<LocationDtos>(jobLocationRequests);
+            var result = await _adminServices.AddLocation(jobLocation);
+            if (result != null)
+            {
+                return Ok(jobLocation.Name + " Added Successfully");
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpDelete]
+        [Route("admin/delete-location/{id}")]
+        public async Task<IActionResult> DeleteJobLocationById(Guid id)
+        {
+            var result = await _adminServices.RemoveLocation(id);
+            if (result)
+            {
+                return Ok("Deleted Successfully");
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpGet]
+        [Route("admin/get-all-locations")]
+        public async Task<IActionResult> GetAllLocations()
+        {
+            var result = await _adminServices.GetAllLocations();
+            if (result != null)
+            {
+                return Ok(mapper.Map<List<LocationDtos>>(result));
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpPost]
+        [Route("admin/add-qualification")]
+        public async Task<IActionResult> AddQualification(QualificationRequest qualificationRequest)
+        {
+            var qualification = mapper.Map<QualificationDtos>(qualificationRequest);
+            var result = await _adminServices.AddQualification(qualification);
+            if (result != null)
+            {
+                return Ok(qualification.Name + " Added Successfully");
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpDelete]
+        [Route("admin/delete-qualification/{id}")]
+        public async Task<IActionResult> DeleteQualificationById(Guid id)
+        {
+            var result = await _adminServices.RemoveQualification(id);
+            if (result)
+            {
+                return Ok("Deleted Successfully");
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpGet]
+        [Route("admin/get-all-qualifications")]
+        public async Task<IActionResult> GetAllQualifications()
+        {
+            var result = await _adminServices.GetAllQualifications();
+            if (result != null)
+            {
+                return Ok(mapper.Map<List<QualificationDtos>>(result));
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpPost]
+        [Route("admin/add-industry")]
+        public async Task<IActionResult> AddIndustry(IndustriesRequests industriesRequests)
+        {
+            var industries = mapper.Map<IndustryDtos>(industriesRequests);
+            var result = await _adminServices.AddIndustries(industries);
+            if (result != null)
+            {
+                return Ok(industries.Name + " Added Successfully");
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpDelete]
+        [Route("admin/delete-industry/{id}")]
+        public async Task<IActionResult> DeleteIndustryById(Guid id)
+        {
+            var result = await _adminServices.RemoveIndustries(id);
+            if (result)
+            {
+                return Ok("Deleted Successfully");
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpGet]
+        [Route("admin/get-all-industries")]
+        public async Task<IActionResult> GetAllIndustries()
+        {
+            var result = await _adminServices.GetIndustries();
+            if (result != null)
+            {
+                return Ok(mapper.Map<List<IndustryDtos>>(result));
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
     }
 }

@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Services.Admin.DTOs
 {
-    public class IndustriesDtos
+    public class IndustryDtos
     {
-        public Guid Id { get; set; }
-
         public string Name { get; set; } = null!;
 
-        public string Discription { get; set; } = null!;
+        public string? Description { get; set; }
     }
 }

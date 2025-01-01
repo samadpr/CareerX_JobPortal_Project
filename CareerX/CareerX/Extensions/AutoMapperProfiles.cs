@@ -45,8 +45,18 @@ namespace Domain.Extensions
 
             CreateMap<CategoryRequests, CategoryDtos>().ReverseMap();
             CreateMap<CategoryDtos, JobCategory>().ReverseMap();
-            
 
+            CreateMap<SkillRequest, SkillsDtos>().ReverseMap();
+            CreateMap<SkillsDtos, Skill>().ReverseMap();
+            
+            CreateMap<LocationRequests, LocationDtos>().ReverseMap();
+            CreateMap<LocationDtos, Location>().ReverseMap();
+
+            CreateMap<QualificationRequest, QualificationDtos>().ReverseMap();
+            CreateMap<QualificationDtos, Qualification>().ReverseMap();
+
+            CreateMap<IndustriesRequests, IndustryDtos>().ReverseMap();
+            CreateMap<IndustryDtos, Industry>().ReverseMap();
         }
     }
 }

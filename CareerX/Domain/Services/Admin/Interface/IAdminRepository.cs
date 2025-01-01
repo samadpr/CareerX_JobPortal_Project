@@ -27,32 +27,31 @@ namespace Domain.Services.Admin.Interface
 
         ///*  public List<JobPost> GetJobs(JobListParams param);*/
 
-        //Task<bool> AddSkillAsync(SkillsDtos skill);
+        Task<Skill> AddSkillAsync(SkillsDtos skill);
+
+        Task<bool> RemoveSkillAsync(Guid skillId);
+
+        Task<List<Skill>> GetSkills();
 
 
-        //Task<bool> RemoveSkillAsync(Guid skillId);
 
-        //Task<List<Skill>> GetSkills();
+        Task<Location> AddLocation(LocationDtos location);
 
+        Task<bool> RemoveLocation(Guid locationId);
 
+        Task<List<Location>> GetAllLocations();
 
-        //Task<Location> AddLocation(LocationDtos location);
+        Task<Qualification> AddQualification(QualificationDtos qualification);
 
-        //Task<bool> RemoveLocation(Guid locationId);
+        Task<bool> RemoveQualification(Guid qaulificationId);
 
-        //Task<List<Location>> GetLocations();
+        Task<List<Qualification>> GetAllQualifications();
 
-        //Task<bool> AddQaulification(QualificationDtos qualification);
+        Task<Industry> AddIndustries(IndustryDtos industry);
 
-        //Task<bool> RemoveQaulification(Guid qaulificationId);
+        Task<bool> RemoveIndustries(Guid id);
 
-        //Task<List<Qualification>> GetQaulifications();
-
-        //Task<List<Industry>> GetIndustries();
-
-        //Task<bool> RemoveIndustries();
-
-        //Task<bool> AddIndustries(IndustriesDtos industry);
+        Task<List<Industry>> GetIndustries();
 
         Task<JobCategory> AddJobCategory(CategoryDtos jobCategory);
 
