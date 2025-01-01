@@ -12,5 +12,6 @@ namespace Domain.Services.Login.Interface
           Domain.Models.AuthUser GetUserByLoginDto(JobSeekerLoginDto jobSeekerLoginDto);
 
         Models.AuthUser GetCompanyByLoginDto(CompanyLoginDto companyLoginDto);
+        Models.AuthUser AdminLogin(AdminLoginDtos admin);
     }
 }

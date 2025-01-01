@@ -9,6 +9,6 @@ namespace Domain.Services.HiringManager.Interface
 {
     public interface IJobService
     {
-        public void JobPostService(JobPostDtos jobPost) { }
+         void JobPostService(JobPostDtos jobPost) { }
     }
 }

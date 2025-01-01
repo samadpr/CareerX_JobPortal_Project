@@ -12,6 +12,7 @@ namespace Domain.Services.Login.Interface
         JobSeekerLoginDto login (JobSeekerLoginDto dto);
 
         CompanyLoginDto CompanyLogin (CompanyLoginDto dto);
+        Models.AuthUser AdminLogin(AdminLoginDtos admin);
 
     }
 }

@@ -37,7 +37,11 @@ namespace Domain.Services.Login
             }
 
         }
-
+       
+        public Models.AuthUser AdminLogin(AdminLoginDtos admin)
+        {
+           return loginJobSeekerRepository.AdminLogin(admin);
+        }
 
 
         public CompanyLoginDto CompanyLogin(CompanyLoginDto dto)
