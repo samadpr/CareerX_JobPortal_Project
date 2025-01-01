@@ -253,14 +253,14 @@ namespace Domain.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())"),
                     JobTitle = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     JobSummary = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LocationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CompanyId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    IndustryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    PostedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    PostedDate = table.Column<DateTime>(type: "datetime", nullable: false, defaultValueSql: "(getdate())"),
-                    QualificationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    SkillId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    LocationId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    CompanyId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    CategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    IndustryId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    PostedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    PostedDate = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
+                    QualificationId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    SkillId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {

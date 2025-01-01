@@ -9,5 +9,6 @@ namespace Domain.Services.Jobseeker
 {
     public class JobSeekerService: IJobSeekerService
     {
+
     }
 }
