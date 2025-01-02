@@ -53,9 +53,9 @@ namespace Domain.Services.Admin.Interface
 
         Task<JobCategory> AddJobCategory(CategoryDtos jobCategory);
 
-        //Task<bool> RemoveJobCategory(Guid jobCategoryId);
+        Task<bool> RemoveJobCategory(Guid jobCategoryId);
 
-        //Task<List<JobCategory>> GetJobCategories();
+        Task<List<JobCategory>> GetJobCategories();
 
 
 

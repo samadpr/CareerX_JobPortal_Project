@@ -30,5 +30,26 @@ namespace CareerX.API.HiringManager
             _jobPostService.JobPostService(jobPostDto);
             return Ok(jobPostDto);
         }
+        [HttpDelete]
+        [Route("HiringManager/removeJob")]
+        public async Task<IActionResult> RemoveJob(Guid jobIdToRemove)
+        {
+            try
+            {
+                _jobPostService.RemoveJobService(jobIdToRemove);
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+        [HttpGet]
+        [Route("HiringManager/getalljobs")]
+        public async Task<IActionResult> GetAllJobs(Guid companyId)
+        {
+            return Ok(_jobPostService.ListPostedJobs(companyId));
+        }
+
     }
 }

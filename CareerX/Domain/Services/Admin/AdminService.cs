@@ -30,10 +30,6 @@ namespace Domain.Services.Admin
         {
             return _adminRepository.DeleteById(id);
         }
-        public async Task<JobCategory> AddJobCategory(CategoryDtos jobCategory)
-        {
-            return await _adminRepository.AddJobCategory(jobCategory);
-        }
 
         public async Task<Skill> AddSkillAsync(SkillsDtos skill)
         {
@@ -93,6 +89,19 @@ namespace Domain.Services.Admin
         public async Task<List<Industry>> GetIndustries()
         {
             return await _adminRepository.GetIndustries();
+        }
+        public async Task<JobCategory> AddJobCategory(CategoryDtos jobCategory)
+        {
+            return await _adminRepository.AddJobCategory(jobCategory);
+        }
+        public async Task<bool> RemoveJobCategory(Guid jobCategoryId)
+        {
+            return await _adminRepository.RemoveJobCategory(jobCategoryId);
+        }
+
+        public async Task<List<JobCategory>> GetJobCategories()
+        {
+            return await _adminRepository.GetJobCategories();
         }
     }
 }

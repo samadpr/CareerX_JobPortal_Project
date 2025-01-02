@@ -88,22 +88,7 @@ namespace CareerX.API.Admin
             }
 
         }
-        [HttpPost]
-        [Route("admin/AddJobCategory")]
-        public async Task<IActionResult> AddJobCategory(CategoryRequests jobCategoryRequests)
-        {
-            var jobCategory = mapper.Map<CategoryDtos>(jobCategoryRequests);
-            var result = await _adminServices.AddJobCategory(jobCategory);
-            if (result != null)
-            {
-                return Ok(result);
-            }
-            else
-            {
-                return BadRequest("Invalid request. Please use Admin credentials.");
-            }
-        }
-
+        
         [HttpPost]
         [Route("admin/add-job-skill")]
         public async Task<IActionResult> AddJobSkill(SkillRequest jobSkillRequests)
@@ -281,6 +266,52 @@ namespace CareerX.API.Admin
             if (result != null)
             {
                 return Ok(mapper.Map<List<IndustryDtos>>(result));
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpPost]
+        [Route("admin/AddJobCategory")]
+        public async Task<IActionResult> AddJobCategory(CategoryRequests jobCategoryRequests)
+        {
+            var jobCategory = mapper.Map<CategoryDtos>(jobCategoryRequests);
+            var result = await _adminServices.AddJobCategory(jobCategory);
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpDelete]
+        [Route("admin/delete-category/{id}")]
+        public async Task<IActionResult> DeleteJobCategoryById(Guid id)
+        {
+            var result = await _adminServices.RemoveJobCategory(id);
+            if (result)
+            {
+                return Ok("Deleted Successfully");
+            }
+            else
+            {
+                return BadRequest("Invalid request. Please use Admin credentials.");
+            }
+        }
+
+        [HttpGet]
+        [Route("admin/get-all-job-categories")]
+        public async Task<IActionResult> GetAllJobCategories()
+        {
+            var result = await _adminServices.GetJobCategories();
+            if (result != null)
+            {
+                return Ok(mapper.Map<List<CategoryDtos>>(result));
             }
             else
             {

@@ -58,13 +58,6 @@ namespace Domain.Services.Admin
                 return false;
             }
         }
-        public async Task<JobCategory> AddJobCategory(CategoryDtos jobCategory)
-        {
-            var category = _mapper.Map<JobCategory>(jobCategory);
-            await _context.JobCategories.AddAsync(category);
-            await _context.SaveChangesAsync();
-            return category;
-        }
 
         public async Task<Skill> AddSkillAsync(SkillsDtos skillDto)
         {
@@ -225,6 +218,27 @@ namespace Domain.Services.Admin
         public async Task<List<Industry>> GetIndustries()
         {
             return await _context.Industries.ToListAsync();
+        }
+        public async Task<JobCategory> AddJobCategory(CategoryDtos jobCategory)
+        {
+            var category = _mapper.Map<JobCategory>(jobCategory);
+            await _context.JobCategories.AddAsync(category);
+            await _context.SaveChangesAsync();
+            return category;
+        }
+        public async Task<bool> RemoveJobCategory(Guid jobCategoryId)
+        {
+            var jobCategory = await _context.JobCategories.FindAsync(jobCategoryId);
+            if (jobCategory != null)
+            {
+                _context.JobCategories.Remove(jobCategory);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            return false;
+        }
+        public async Task<List<JobCategory>> GetJobCategories()
+        {
+            return await _context.JobCategories.ToListAsync();
         }
     }
 }
