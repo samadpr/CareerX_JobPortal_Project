@@ -26,5 +26,27 @@ namespace Domain.Services.HiringManager
             _context.JobPosts.Add(mappedPost);
             _context.SaveChanges();
         }
+        public void RemoveJob(Guid jobIdToRemove) 
+        {
+            var selectedJob = _context.JobPosts.Find(jobIdToRemove);
+            if (selectedJob != null)
+            {
+            _context.JobPosts.Remove(selectedJob);
+            _context.SaveChanges();
+            }
+            else
+            {
+                //
+            }
+        }
+        public List<JobPost> ListPostedJobs(Guid companyId)
+        {
+            //return using LINQ
+            return _context.JobPosts.Where(x => x.CompanyId == companyId).ToList();
+        }
+        public List<JobService> ListApplicantsForJob(Guid JobId)
+        {
+
+        }
     }
 }

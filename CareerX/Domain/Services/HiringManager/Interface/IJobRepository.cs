@@ -1,4 +1,6 @@
-﻿using Domain.Services.Job.DTOs;
+﻿using Domain.Models;
+using Domain.Services.Job.DTOs;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,9 @@ namespace Domain.Services.HiringManager.Interface
 {
     public interface IJobRepository
     {
-        public void PostJob(JobPostDtos jobPost) { }
+        public void PostJob(JobPostDtos jobPost);
+        public void RemoveJob(Guid jobIdToRemove);
+        List<JobPost> ListPostedJobs(Guid companyId);
+        
     }
 }
