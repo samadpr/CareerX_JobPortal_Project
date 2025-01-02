@@ -9,8 +9,8 @@ namespace Domain.Services.Login.Interface
 {
     public interface ILoginRequestRepository
     {
-          Domain.Models.AuthUser GetUserByLoginDto(JobSeekerLoginDto jobSeekerLoginDto);
-
+        Domain.Models.AuthUser GetUserByLoginDto(JobSeekerLoginDto jobSeekerLoginDto);
         Models.AuthUser GetCompanyByLoginDto(CompanyLoginDto companyLoginDto);
+        Models.AuthUser AdminLogin(AdminLoginDtos admin);
     }
 }

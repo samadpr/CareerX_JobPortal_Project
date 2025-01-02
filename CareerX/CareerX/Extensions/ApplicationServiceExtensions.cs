@@ -1,192 +1,4 @@
-﻿
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-using Domain.Models;
+﻿using Domain.Models;
 using Domain.Services.Email;
 using Domain.Services.SignUp.Interface;
 using Domain.Services.SignUp;
@@ -207,6 +19,8 @@ using Domain.Services.Company.Interface;
 using Domain.Services.Company;
 using Domain.Services.HiringManager.Interface;
 using Domain.Services.HiringManager;
+using Domain.Services.Admin.Interface;
+using Domain.Services.Admin;
 
 
 namespace CareerX.Extensions
@@ -231,6 +45,8 @@ namespace CareerX.Extensions
             services.AddScoped<ICompanyRepository, CompanyRepository>();
             services.AddScoped<IJobService, JobService>();
             services.AddScoped<IJobRepository, JobRepository>();
+            services.AddScoped<IAdminRepository, AdminRepository>();
+            services.AddScoped<IAdminServices, AdminService>();
 
             return services;
         }
